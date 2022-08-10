@@ -1,12 +1,13 @@
 # hivap
 repository for hivap and calculations
 
-To compile HIVAP, run in the terminal:
+To compile HIVAP, run in the terminal: <br/>
   make clean
   make
 
-Main HIVAP script is hivapn.
+The main HIVAP script is hivapn (run it with ./hivapn, after updating hivapein.dat file with correct values).
 
+### HIVAP "automatization":
 The script to automatize HIVAP consists of several subscripts:
  - ifus_mode_0.sh - changes HIVAP mode to IFUS=0
  - ifus_mode_10.sh - changes HIVAP mode to IFUS=10
