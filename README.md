@@ -2,7 +2,7 @@
 repository for hivap and calculations
 
 To compile HIVAP, run in the terminal: <br/>
-  make clean
+  make clean <br/>
   make
 
 The main HIVAP script is hivapn (run it with ./hivapn, after updating hivapein.dat file with correct values).
