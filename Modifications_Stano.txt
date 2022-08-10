@@ -1,0 +1,43 @@
+16.5.2013 
+Updated masses for Sr from 71 to 80.
+71,72 FRDM and 73-80 from AME2012
+
+18.12.2012
+Updated masses for all Kr, Hg, Tl and Pb isotopes according to AME2012 (preview for 2013)
+
+21.5.2012
+Updated masses for all Ac isotopes according to AME2011 (preview for 2013) from 201 to 206 and above  238 taken from FRDM
+
+11.4.2012
+Updated masses for all Mg isotopes according to AME2011 (preview for 2013)
+Updated masses for all Pb isotopes according to AME2011 (preview for 2013)
+Updated masses for all Bi isotopes according to AME2011 (preview for 2013) from 181 to 183 values taken from FRDM
+Updated masses for all Pu isotopes according to AME2011 (preview for 2013) from 221 to 227 values and from 248 to 250 taken from FRDM
+Updated masses for all Am isotopes according to AME2011 (preview for 2013) from 221 to 227 values and from 248 to 250 taken from FRDM
+Updated masses for all Cm isotopes according to AME2011 (preview for 2013) from 233 to 252 values and The rest is FRDM
+
+
+
+22.9.2011
+Updated mass for 142Nd
+Updated masses from 49Cr to 55Cr
+
+21.9.2011 
+Updated masses for few Ni and Pr isotopes in the region of stable isotopes.
+
+Updated masses for 191-240Fr isotopes. 
+From 199Fr to 232Fr values were taken from Audi-Wapstra.
+The rest is from FRDM.
+
+Updated masses for 186-230Rn isotopes
+From 195Rn to 228Rn values were taken from Audi-Wapstra.
+The rest is from FRDM.
+
+Updated masses for 184-230At
+From 193At to 223At values were taken from Audi-Wapstra
+The rest is from FRDM
+
+Updated masses for 181-230Po
+Values for 188Po to 220Po were taken from Audi-Wapstra
+The rest is from FRDM.
+
