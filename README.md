@@ -8,7 +8,7 @@ To compile HIVAP, run in the terminal:
 Main HIVAP script is hivapn.
 
 The script to automatize HIVAP consists of several subscripts:
-  ifus_mode_0.sh - changes HIVAP mode to IFUS=0
+ - ifus_mode_0.sh - changes HIVAP mode to IFUS=0
   ifus_mode_10.sh - changes HIVAP mode to IFUS=10
   move_hivapein_hivaperg.sh - automatically moves output file (hivaperg.dat) to the adam_MyHivap/hivaperg folder
     and changes its name (and its header - time, date and the reaction) according to the reaction, BARFAC value and IFUS mode used
