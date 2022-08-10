@@ -1,5 +1,4 @@
-# hivap
-repository for hivap and calculations
+# HIVAP
 
 To compile HIVAP, run in the terminal: <br/>
   make clean <br/>
