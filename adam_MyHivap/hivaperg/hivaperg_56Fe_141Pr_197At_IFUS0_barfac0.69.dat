@@ -2,7 +2,7 @@
 
            Bearbeitung F.P.Heßberger
            
-   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 01/02/2022 17:11 (Sitarcik) 
+   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 22/08/2022 14:05 (Sitarcik) 
            
 
  Unterprogramm SEPENF
@@ -42,6 +42,86 @@
              -0.80     -1.60     -0.80     -1.59     -0.79     -1.58     -0.79
 
  benutzter Q-Wert  -140.219 MeV    effektiver Q-Wert  -140.219 MeV
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   209.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 209.881 MeV    E* =  10.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   211.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 211.278 MeV    E* =  11.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   212.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 212.675 MeV    E* =  12.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   214.1
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 214.072 MeV    E* =  13.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   215.5
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 215.469 MeV    E* =  14.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   216.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 216.866 MeV    E* =  15.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   218.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 218.264 MeV    E* =  16.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   219.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 219.661 MeV    E* =  17.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   221.1
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 221.058 MeV    E* =  18.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   222.5
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 222.455 MeV    E* =  19.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
 
  PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   223.9
  ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
@@ -173,7 +253,7 @@ E_lab = 236.427 MeV    E* =  29.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 01/02/2022 17:11 (Sitarcik) 
+   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 22/08/2022 14:05 (Sitarcik) 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -339,7 +419,7 @@ E_lab = 236.427 MeV    E* =  29.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 01/02/2022 17:11 (Sitarcik) 
+   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 22/08/2022 14:05 (Sitarcik) 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -505,7 +585,7 @@ E_lab = 236.427 MeV    E* =  29.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 01/02/2022 17:11 (Sitarcik) 
+   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 22/08/2022 14:05 (Sitarcik) 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -662,7 +742,7 @@ E_lab = 236.427 MeV    E* =  29.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 01/02/2022 17:11 (Sitarcik) 
+   56Fe + 141Pr ---> 197At IFUS0 barfac0.69 22/08/2022 14:05 (Sitarcik) 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt

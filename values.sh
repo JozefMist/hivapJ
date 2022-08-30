@@ -1,19 +1,19 @@
 #!/bin/bash
 
 #what is produced
-proj=95Mo
-targ=93Nb
-cn=188Bi
+proj=54Fe
+targ=141Pr
+cn=197At
 
 #here, input new values
-mproj=95
-zproj=42
-mtarg=93
-ztarg=41
-barfac=0.64
-r0=1.10954
-q2=0.053
-sigr=2.8
+mproj=54
+zproj=26
+mtarg=141
+ztarg=59
+barfac=0.66
+r0=1.10716
+q2=0.0
+sigr=2.5
 
 line1=$(sed '1q;d' hivapein_IFUS10.dat)
 line3=$(sed '3q;d' hivapein_IFUS10.dat)
