@@ -32,6 +32,6 @@ int main()
  R_null = (C_pro + C_tar)/(A_pro_13 + A_tar_13);
  
  cout << "r0=" << R_null << endl;
- 
-return 0; 
+
+ return 0; 
 }
