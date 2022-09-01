@@ -1,5 +1,5 @@
 reset 
-set terminal qt enhanced size 600, 400
+set terminal qt enhanced size 800, 600
 
 set title '54Fe+141Pr->195At*, BF=0.59' font ',12'
 
@@ -11,8 +11,8 @@ set format y "10^{%L}"
 
 set grid
 
-set xrange [230:290]
-set yrange [1E-10:]
+set xrange [225:280]
+set yrange [1E-7:4e-5]
 
 set ylabel '{/Symbol s} [mb]' font ',12'
 set xlabel '{E (54Fe) [MeV]' font ',12'

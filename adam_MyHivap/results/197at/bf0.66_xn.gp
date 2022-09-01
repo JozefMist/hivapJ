@@ -1,5 +1,5 @@
 reset 
-set terminal qt enhanced size 600, 400
+set terminal qt enhanced size 800, 600
 
 set title '56Fe+141Pr->197At*, BF=0.66' font ',12'
 
@@ -14,9 +14,10 @@ set grid
 
 # set grid xtics lc rgb 'black' dt 3 lw 0.5
 
+
 set xrange [230:290]
 # set xrange [15:90]
-set yrange [1E-10:]
+set yrange [1E-6:5e-3]
 
 set ylabel '{/Symbol s} [mb]' font ',12'
 set xlabel '{E (56Fe) [MeV]' font ',12'

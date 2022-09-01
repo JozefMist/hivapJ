@@ -6,7 +6,7 @@ set grid
 
 set logscale y
 
-ymin=1e-8
+ymin=3e-7
 ymax=1e-3
 
 bass_en_proj = 382
@@ -48,7 +48,7 @@ unset label 2
 set label 3 '2pxn' at graph 0.7, 0.9 font ',12'
 unset title
 ymin = ymin*10
-ymax = ymax*10
+# ymax = ymax*10
 unset arrow 1
 set arrow 1 from bass_en_proj, ymin to bass_en_proj, ymax dt 2 lw 2 nohead
 set yrange [ymin:ymax]
