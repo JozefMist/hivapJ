@@ -17,9 +17,9 @@ set grid
 
 set xrange [230:290]
 # set xrange [15:90]
-set yrange [1E-6:5e-3]
+set yrange [1:5e3]
 
-set ylabel '{/Symbol s} [mb]' font ',12'
+set ylabel '{/Symbol s} [nb]' font ',12'
 set xlabel '{E (56Fe) [MeV]' font ',12'
 
-plot for [i=4:7] 'bf0.66_xn.dat' index 0 using 1:($i*10) with l lw 2 lt i title columnhead, '' index 1 using 1:($3*10) pt 5 lt 5 title columnhead, for [i=3:4] '' index 2 using 1:($i*10) pt 5 lt (i+3) title columnhead
+plot for [i=4:7] '56Fe_141Pr_in_nb_bf0.66.dat' index 0 using 1:i with l lw 2 lt i title columnhead, '' index 1 using 1:3 pt 5 lt 5 title columnhead, for [i=3:4] '' index 2 using 1:i pt 5 lt (i+3) title columnhead
