@@ -21,6 +21,7 @@ line_array = []
 for line in lines_in_file:
     line_array.append(line.split())  
 
-for i in line_array:
-    print(i)
+for line in line_array:
+    if len(line) != 0:
+        print(line[0] == 'E*/MeV')
 
