@@ -16,7 +16,7 @@ echo Saving input and output for IFUS=0
 echo
 ./move_hivapein_hivaperg.sh
 echo
-echo Changin mode to IFUS=10
+echo Changing mode to IFUS=10
 echo
 ./ifus_mode_10.sh
 echo

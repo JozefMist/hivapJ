@@ -11,7 +11,7 @@ zproj=40
 mtarg=103
 ztarg=45
 barfac=0.54
-r0=1.11099
+r0=`r0_calc.py $mproj $zproj $mtarg $ztarg`
 q2=0.0
 sigr=3.1
 
