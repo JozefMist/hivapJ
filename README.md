@@ -17,7 +17,7 @@ The script to automatize HIVAP consists of several subscripts:
 
 To run a script which automatizes the HIVAP calculation, update values in values.sh:
  - Z and A of projectile, target and CN are needed as well as the "name" of isotope (to update the name of output file). 
- - r0 parameter can be calculated with a use of r0_calc macro. 
+ - r0 parameter is calculated automatically by r0_calc.py script. 
  - q2 deformation parameter (of the target nucleus) is from the Moller_1995_deformations_and_masses.pdf article (beta_2 parameter therein). 
  - sigr param. depends on the deformation, usually ~2.5 for spherical targets and up to 3.5 for deformed ones. 
   
