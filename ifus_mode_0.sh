@@ -9,8 +9,6 @@ test=$(sed '32q;d' hivapein.dat)
 IFS=' '
 read -a ifus_test <<< "$test"
 
-echo
-
 if [ ${ifus_test[3]} = $ifus_opt ] 
 then
 	cp hivapein_IFUS0.dat hivapein.dat
