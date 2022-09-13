@@ -14,6 +14,7 @@ The script to automatize HIVAP consists of several subscripts:
     and changes its name (and its header - time, date and the reaction) according to the reaction, BARFAC value and IFUS mode used
  - script_hivap.sh - main script which runs all subscripts
  - values.sh - script to change initial values
+ - extract_data.py - script extract data for each evap channel and saves it into adam_MyHivap/data_hivap in easily usable form - groups together each evap channel and adds beam energy
 
 To run a script which automatizes the HIVAP calculation, update values in values.sh:
  - Z and A of projectile, target and CN are needed as well as the "name" of isotope (to update the name of output file). 
