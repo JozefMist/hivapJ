@@ -1,6 +1,2 @@
 *.pdf
 *.o
-adam_MyHivap/hivaperg/*.dat
-adam_MyHivap/hivapein/*.dat
-adam_MyHivap/data_hivap/*.dat
-

@@ -16,8 +16,8 @@ time_erg=${header_erg[7]}
 IFS=' '
 read -a word <<< "$line_in"
 
-whereto_in="adam_MyHivap/hivapein"
-whereto_erg="adam_MyHivap/hivaperg"
+whereto_in="MyHivap/hivapein"
+whereto_erg="MyHivap/hivaperg"
 
 hivapein_dest="${whereto_in}/hivapein_${word[0]}_${word[2]}_${word[4]}_${word[5]}_${word[6]}.dat"
 hivaperg_dest="${whereto_erg}/hivaperg_${word[0]}_${word[2]}_${word[4]}_${word[5]}_${word[6]}.dat"
