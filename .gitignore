@@ -1,4 +1,4 @@
 *.pdf
 *.o
-adam_MyHivap/
+adam_MyHivap/*.dat
 
