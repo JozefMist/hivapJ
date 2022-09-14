@@ -7,7 +7,7 @@ To compile HIVAP, run in the terminal: <br/>
 The main HIVAP script is hivapn (run it with ./hivapn, after updating hivapein.dat file with correct values).
 <br/>
 Input file is hivapein.dat - hivapein_IFUS0.dat and hivapein_IFUS10.dat are for easy change of the IFUS mode <br/>
-Output file is hivaperg.dat
+Output file is hivaperg.dat, ALL CS values are in milibarns [mb]
 
 ### HIVAP "automatization":
 The script to automatize HIVAP consists of several subscripts:
