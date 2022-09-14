@@ -1,2 +1,4 @@
 *.pdf
 *.o
+!Moller_1995_deformations_and_masses.pdf
+!hivap_manual.pdf
