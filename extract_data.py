@@ -23,7 +23,10 @@ for input_file in sys.argv[1:]:
     for line in lines_in_file:
         line_array.append(line.split())  
     
-    output_name = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][2] + '_' + line_array[4][4] + '_' + line_array[4][5] + '_' + line_array[4][6] + '.dat'
+    output_name = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][2] + '_' + line_array[4][4] + '_allCh_' + line_array[4][5] + '_' + line_array[4][6] + '.dat'
+    output_name_xn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][2] + '_' + line_array[4][4] + '_xn_' + line_array[4][5] + '_' + line_array[4][6] + '.dat'
+    output_name_pxn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][2] + '_' + line_array[4][4] + '_pxn_' + line_array[4][5] + '_' + line_array[4][6] + '.dat'
+    output_name_2pxn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][2] + '_' + line_array[4][4] + '_2pxn_' + line_array[4][5] + '_' + line_array[4][6] + '.dat'
 
     temp_xn_name = 'temp_xn.dat'
     temp_pxn_name = 'temp_pxn.dat'
@@ -36,7 +39,10 @@ for input_file in sys.argv[1:]:
     temp_elab = open(temp_elab_name, 'w')
     
     output = open(output_name, 'w')
-    
+    output_xn = open(output_name_xn, 'w')
+    output_pxn = open(output_name_pxn, 'w')
+    output_2pxn = open(output_name_2pxn, 'w')
+
     i = 0
     while i < (len(line_array)-2):
         if len(line_array[i]) != 0 and line_array[i][0] == 'Querschnitte' and len(line_array[i+1]) == 0 and len(line_array[i+2]) != 0 and line_array[i+2][0] == 'E*/MeV':
@@ -66,6 +72,7 @@ for input_file in sys.argv[1:]:
     
     temp_array = [temp_xn, temp_pxn, temp_2pxn, temp_elab]
     temp_array_name = [temp_xn_name, temp_pxn_name, temp_2pxn_name, temp_elab_name]
+
     for item in temp_array:
         item.close()
 
@@ -81,21 +88,26 @@ for input_file in sys.argv[1:]:
         f.close()
 
     temp_array_name.pop()
+
+    output_array = [output_name_xn, output_name_pxn, output_name_2pxn]
     
     temp_elab = open(temp_elab_name, 'r')
     elab_lines = temp_elab.readlines()
 
-    for item in temp_array_name:
-        f = open(item, 'r')
+    for item_no in range(len(temp_array_name)):
+        f = open(temp_array_name[item_no], 'r')
+        file = open(output_array[item_no], 'w')
         lines = f.readlines()
         if len(elab_lines) == len(lines):
             for i in range(len(elab_lines)):
                 output_line = elab_lines[i].split()[0] + '\t' + lines[i]
                 output.write(output_line)
+                file.write(output_line)
         output.write('\n\n')
         f.close()
+        file.close()
 
-os.remove(temp_xn_name)
-os.remove(temp_pxn_name)
-os.remove(temp_2pxn_name)
-os.remove(temp_elab_name)
+#os.remove(temp_xn_name)
+#os.remove(temp_pxn_name)
+#os.remove(temp_2pxn_name)
+#os.remove(temp_elab_name)
