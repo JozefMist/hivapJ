@@ -1,19 +1,20 @@
 #!/bin/bash
 
 #what is produced
-proj=46Ti
-targ=144Sm
-cn=190Po
+proj=88Sr
+targ=92Mo
+cn=180Hg
 
 #here, input new values
-mproj=46
-zproj=22
-mtarg=144
-ztarg=62
-barfac=0.64
+mproj=88
+zproj=38
+mtarg=92
+ztarg=42
+barfac=0.85
 r0=`r0_calc.py $mproj $zproj $mtarg $ztarg`
-q2=0.0
+q2=0.035
 sigr=2.5
+v0=40
 
 line1=$(sed '1q;d' hivapein_IFUS10.dat)
 line3=$(sed '3q;d' hivapein_IFUS10.dat)
@@ -35,6 +36,7 @@ zproj_orig=${word_line3[1]}
 mtarg_orig=${word_line3[2]}
 ztarg_orig=${word_line3[3]}
 barfac_orig=${word_line23[2]}
+v0_orig=${word_line33[0]}
 r0_orig=${word_line33[1]}
 q2_orig=${word_line33[3]}
 sigr_orig=${word_line34[1]}
@@ -45,6 +47,7 @@ sed -i "s/$zproj_orig/ZPROJ=$zproj/" hivapein_IFUS10.dat
 sed -i "s/$mtarg_orig/MTARG=$mtarg/" hivapein_IFUS10.dat
 sed -i "s/$ztarg_orig/ZTARG=$ztarg/" hivapein_IFUS10.dat
 sed -i "s/$barfac_orig/BARFAC=$barfac/" hivapein_IFUS10.dat
+sed -i "s/$v0_orig/V0=$v0/" hivapein_IFUS10.dat
 sed -i "s/$r0_orig/r0=$r0/" hivapein_IFUS10.dat
 sed -i "s/$q2_orig/Q2=$q2/" hivapein_IFUS10.dat
 sed -i "s/$sigr_orig/sigr=$sigr/" hivapein_IFUS10.dat
@@ -63,6 +66,7 @@ echo ZPROJ=$zproj
 echo MTARG=$mtarg
 echo ZTARG=$ztarg
 echo BARFAC=$barfac
+echo V0=$v0
 echo r0=$r0
 echo Q2=$q2
 echo sigr=$sigr
