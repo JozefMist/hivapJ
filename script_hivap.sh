@@ -16,7 +16,7 @@ echo Saving input and output for IFUS=0
 echo
 ./move_hivapein_hivaperg.sh
 echo
-extract_data.py hivaperg.dat
+python3 extract_data.py hivaperg.dat
 echo
 echo Changing mode to IFUS=10
 echo
@@ -30,7 +30,7 @@ echo Saving input and output for IFUS=10
 echo 
 ./move_hivapein_hivaperg.sh
 echo
-extract_data.py hivaperg.dat
+python3 extract_data.py hivaperg.dat
 echo
 echo Done
 
