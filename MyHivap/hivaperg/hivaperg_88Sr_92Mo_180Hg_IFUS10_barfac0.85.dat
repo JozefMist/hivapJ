@@ -2,7 +2,7 @@
 
            Bearbeitung F.P.Heßberger
            
-   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 13:53 (Sitarcik) 
+   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 16:40 (Sitarcik) 
            
 
  Unterprogramm SEPENF
@@ -44,6 +44,16 @@
  benutzter Q-Wert  -154.468 MeV    effektiver Q-Wert  -154.468 MeV
 
 
+E_lab = 317.872 MeV    E* =   8.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+
+E_lab = 319.829 MeV    E* =   9.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+
 E_lab = 321.785 MeV    E* =  10.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
 
 
@@ -75,7 +85,7 @@ E_lab = 331.568 MeV    E* =  15.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 13:53 (Sitarcik) 
+   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 16:40 (Sitarcik) 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -193,7 +203,7 @@ E_lab = 331.568 MeV    E* =  15.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 13:53 (Sitarcik) 
+   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 16:40 (Sitarcik) 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -311,7 +321,7 @@ E_lab = 331.568 MeV    E* =  15.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 13:53 (Sitarcik) 
+   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 16:40 (Sitarcik) 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -429,7 +439,7 @@ E_lab = 331.568 MeV    E* =  15.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 13:53 (Sitarcik) 
+   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 16:40 (Sitarcik) 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -547,7 +557,7 @@ E_lab = 331.568 MeV    E* =  15.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 13:53 (Sitarcik) 
+   88Sr + 92Mo ---> 180Hg IFUS10 barfac0.85 14/09/2022 16:40 (Sitarcik) 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
