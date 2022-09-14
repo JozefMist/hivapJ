@@ -2,7 +2,7 @@
 
            Bearbeitung F.P.Heßberger
            
-   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:47 (Sitarcik)  
+   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:53 (Sitarcik)  
            
 
  Unterprogramm SEPENF
@@ -213,7 +213,7 @@ E_lab = 349.177 MeV    E* =  24.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:47 (Sitarcik)  
+   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:53 (Sitarcik)  
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -379,7 +379,7 @@ E_lab = 349.177 MeV    E* =  24.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:47 (Sitarcik)  
+   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:53 (Sitarcik)  
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -545,7 +545,7 @@ E_lab = 349.177 MeV    E* =  24.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:47 (Sitarcik)  
+   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:53 (Sitarcik)  
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -711,7 +711,7 @@ E_lab = 349.177 MeV    E* =  24.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:47 (Sitarcik)  
+   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:53 (Sitarcik)  
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -835,7 +835,7 @@ E_lab = 349.177 MeV    E* =  24.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:47 (Sitarcik)  
+   88Sr + 92Mo ---> 180Hg IFUS0 barfac0.85 14/09/2022 13:53 (Sitarcik)  
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt

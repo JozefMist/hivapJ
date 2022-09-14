@@ -1,0 +1,8 @@
+Update: git pull
+
+IFUS0 bez podbariérovej fúzie
+IFUS10 s podbariérovou fúziou
+
+Hodnoty učinných prierezov sú v mb.
+
+V0 = 40, 59, nikto nevie
