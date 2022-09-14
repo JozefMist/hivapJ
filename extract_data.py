@@ -42,15 +42,15 @@ for input_file in sys.argv[1:]:
         if len(line_array[i]) != 0 and line_array[i][0] == 'Querschnitte' and len(line_array[i+1]) == 0 and len(line_array[i+2]) != 0 and line_array[i+2][0] == 'E*/MeV':
             i += 2
             while len(line_array[i]) != 0:
-                temp_xn.write(' '.join(line_array[i]) + '\n')
+                temp_xn.write('\t'.join(line_array[i]) + '\n')
                 i += 1
             i += 1
             while len(line_array[i]) != 0:
-                temp_pxn.write(' '.join(line_array[i]) + '\n')
+                temp_pxn.write('\t'.join(line_array[i]) + '\n')
                 i += 1
             i += 1
             while len(line_array[i]) != 0:
-                temp_2pxn.write(' '.join(line_array[i]) + '\n')
+                temp_2pxn.write('\t'.join(line_array[i]) + '\n')
                 i += 1
             i += 1
             if len(line_array[i]) != 0 and line_array[i][0] == 'Z-Verteilung':
@@ -60,7 +60,7 @@ for input_file in sys.argv[1:]:
             temp_elab.write(' '.join(line_array[i]) + '\n')
             i += 2
             while len(line_array[i]) != 0:
-                temp_elab.write(' '.join(line_array[i]) + '\n')
+                temp_elab.write('\t'.join(line_array[i]) + '\n')
                 i += 1
         i += 1
     
@@ -90,7 +90,7 @@ for input_file in sys.argv[1:]:
         lines = f.readlines()
         if len(elab_lines) == len(lines):
             for i in range(len(elab_lines)):
-                output_line = elab_lines[i].split()[0] + ' ' + lines[i]
+                output_line = elab_lines[i].split()[0] + '\t' + lines[i]
                 output.write(output_line)
         output.write('\n\n')
         f.close()
