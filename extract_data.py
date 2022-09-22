@@ -107,7 +107,7 @@ for input_file in sys.argv[1:]:
         f.close()
         file.close()
 
-#os.remove(temp_xn_name)
-#os.remove(temp_pxn_name)
-#os.remove(temp_2pxn_name)
-#os.remove(temp_elab_name)
+os.remove(temp_xn_name)
+os.remove(temp_pxn_name)
+os.remove(temp_2pxn_name)
+os.remove(temp_elab_name)
