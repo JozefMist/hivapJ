@@ -9,7 +9,7 @@ def getMagicDistance(number, magic):
     if number  == 1:
         return 1
 
-    for i in range(len(magic)-1):
+    for i in range(len(magic)):
         if number == magic[i]:
             return 0
         elif number < magic[i]:
@@ -22,7 +22,7 @@ def getMin(number1, number2):
     if number1 == number2:
         return number1
     elif number1 < number2:
-        return number1 
+        return number1
     else:
         return number2
 
@@ -33,6 +33,8 @@ else:
     Zt = int(sys.argv[2])
     Np = int(sys.argv[3]) - int(sys.argv[4])
     Zp = int(sys.argv[4])
+
+    print(getMin(getMagicDistance(Zp, magic_numbers), getMagicDistance(Np, magic_numbers)))
 
     v_min = getMin(getMagicDistance(Zt, magic_numbers), getMagicDistance(Nt, magic_numbers)) + getMin(getMagicDistance(Zp, magic_numbers), getMagicDistance(Np, magic_numbers))
     zt_zp = Zt*Zp

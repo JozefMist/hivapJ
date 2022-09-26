@@ -1,4 +1,4 @@
-   51V + 147Sm ---> 198At IFUS10 barfac0.68 23/09/2022 14:28 (Sitarcik)
+   51V + 147Sm ---> 198At IFUS10 barfac0.69 23/09/2022 14:26 (Sitarcik)
 ----------------------------------------------------------------------- 
   MPROJ=51  ZPROJ=23  MTARG=147  ZTARG=62                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
@@ -20,7 +20,7 @@
   IF  IGAM NOT ZERO                                                    
   CGIANT=0.0    EGIANT=0     WGIANT=0        STRIPE=0    IOPT=0  
 -----------------------------------------------------------------------
-   LEVELPAR=1.16 AF/AN=1.00 BARFAC=0.68 EDAMP=18.5 BAR0=0.       
+   LEVELPAR=1.16 AF/AN=1.00 BARFAC=0.69 EDAMP=18.5 BAR0=0.       
    SHELL0=0.0 DELT=0  QVALUE=0.                                  
 -----------------------------------------------------------------------
      ONLY IF LIMITS NOT ZERO                                           
