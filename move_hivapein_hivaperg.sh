@@ -19,8 +19,8 @@ read -a word <<< "$line_in"
 whereto_in="MyHivap/hivapein"
 whereto_erg="MyHivap/hivaperg"
 
-hivapein_dest="${whereto_in}/hivapein_${word[0]}_${word[2]}_${word[4]}_${word[5]}_${word[6]}.dat"
-hivaperg_dest="${whereto_erg}/hivaperg_${word[0]}_${word[2]}_${word[4]}_${word[5]}_${word[6]}.dat"
+hivapein_dest="${whereto_in}/hivapein_${word[0]}_${word[1]}_${word[2]}_${word[3]}_${word[4]}_${word[5]}.dat"
+hivaperg_dest="${whereto_erg}/hivaperg_${word[0]}_${word[1]}_${word[2]}_${word[3]}_${word[4]}_${word[5]}.dat"
 
 echo
 if [ $date_in = $date_erg ] && [ $time_in = $time_erg ]
