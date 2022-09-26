@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
+from fileinput import filename
 import sys
 import os
 import os.path
 import pathlib
+import shutil
 
 current_path = pathlib.Path().resolve()
 if len(sys.argv) < 2:
@@ -18,15 +20,17 @@ for input_file in sys.argv[1:]:
     file = open(input_file, 'r', encoding='ascii', errors='ignore')
     lines_in_file = file.readlines()
     
+    path_data= 'MyHivap/data_hivap/'
+    
     line_array = []
     
     for line in lines_in_file:
         line_array.append(line.split())  
     
-    output_name = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_allCh_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
-    output_name_xn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_xn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
-    output_name_pxn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
-    output_name_2pxn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_2pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+    output_name = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_allCh_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+    output_name_xn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_xn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+    output_name_pxn =  line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+    output_name_2pxn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_2pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
 
     temp_xn_name = 'temp_xn.dat'
     temp_pxn_name = 'temp_pxn.dat'
@@ -38,10 +42,10 @@ for input_file in sys.argv[1:]:
     temp_2pxn = open(temp_2pxn_name, 'w')
     temp_elab = open(temp_elab_name, 'w')
     
-    output = open(output_name, 'w')
-    output_xn = open(output_name_xn, 'w')
-    output_pxn = open(output_name_pxn, 'w')
-    output_2pxn = open(output_name_2pxn, 'w')
+    output = open(path_data + output_name, 'w')
+    output_xn = open(path_data + output_name_xn, 'w')
+    output_pxn = open(path_data + output_name_pxn, 'w')
+    output_2pxn = open(path_data + output_name_2pxn, 'w')
 
     i = 0
     while i < (len(line_array)-2):
@@ -71,10 +75,11 @@ for input_file in sys.argv[1:]:
         i += 1
     
     temp_array = [temp_xn, temp_pxn, temp_2pxn, temp_elab]
-    temp_array_name = [temp_xn_name, temp_pxn_name, temp_2pxn_name, temp_elab_name]
 
     for item in temp_array:
         item.close()
+
+    temp_array_name = [temp_xn_name, temp_pxn_name, temp_2pxn_name, temp_elab_name]
 
     for item in temp_array_name:
         f = open(item, 'r')
@@ -96,7 +101,7 @@ for input_file in sys.argv[1:]:
 
     for item_no in range(len(temp_array_name)):
         f = open(temp_array_name[item_no], 'r')
-        file = open(output_array[item_no], 'w')
+        file = open(path_data + output_array[item_no], 'w')
         lines = f.readlines()
         if len(elab_lines) == len(lines):
             for i in range(len(elab_lines)):
@@ -106,7 +111,20 @@ for input_file in sys.argv[1:]:
         output.write('\n\n')
         f.close()
         file.close()
+    
+path_results = 'MyHivap/results/'
 
+for file_name in output_array:
+    if os.path.exists(path_results + line_array[4][2].lower()):
+        if os.path.exists(path_results + line_array[4][2].lower() + '/data/'):
+            shutil.copy(path_data + file_name, path_results + line_array[4][2].lower() + '/data/')
+        else:
+            os.mkdir(path_results + line_array[4][2].lower() + '/data/')
+            shutil.copy(path_data + file_name, path_results + line_array[4][2].lower() + '/data/')
+    else:
+        os.mkdir(path_results + line_array[4][2].lower() + '/data/')
+        shutil.copy(path_data + file_name, path_results + line_array[4][2].lower() + '/data/')
+        
 os.remove(temp_xn_name)
 os.remove(temp_pxn_name)
 os.remove(temp_2pxn_name)
