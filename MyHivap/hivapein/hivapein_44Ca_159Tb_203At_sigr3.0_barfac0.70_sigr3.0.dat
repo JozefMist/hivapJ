@@ -1,4 +1,4 @@
-   44Ca 159Tb 203At IFUS10 barfac0.70 sigr3.0 26/09/2022 14:14 Sitarcik
+   44Ca 159Tb 159Tb IFUS10 203At sigr3.0 barfac0.70 sigr3.0 26/09/2022
 ----------------------------------------------------------------------- 
   MPROJ=44  ZPROJ=210  MTARG=159  ZTARG=65                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            

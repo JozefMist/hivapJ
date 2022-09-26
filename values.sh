@@ -1,19 +1,19 @@
 #!/bin/bash
 
 #what is produced
-proj=51V
-targ=147Sm
-cn=198At
+proj=44Ca
+targ=159Tb
+cn=203At
 
 #here, input new values
-mproj=51
-zproj=23
-mtarg=147
-ztarg=62
-barfac=0.68
+mproj=44
+zproj=210
+mtarg=159
+ztarg=65
+barfac=0.70
 r0=`python3 r0_calc.py $mproj $zproj $mtarg $ztarg`
-q2=0.143
-sigr=2.8
+q2=0.271
+sigr=3.0
 v0=40
 
 line1=$(sed '1q;d' hivapein_IFUS10.dat)
@@ -74,16 +74,18 @@ echo sigr=$sigr
 #Header update
 today=$(date +"%d/%m/%Y")
 now=$(date +"%H:%M")
-sed -i "s|${word_line1[7]}|$today|" hivapein_IFUS10.dat
-sed -i "s|${word_line1[7]}|$today|" hivapein_IFUS0.dat
-sed -i "s|${word_line1[8]}|$now|" hivapein_IFUS10.dat
-sed -i "s|${word_line1[8]}|$now|" hivapein_IFUS0.dat
-sed -i "s|${word_line1[6]}|barfac$barfac|" hivapein_IFUS10.dat
-sed -i "s|${word_line1[6]}|barfac$barfac|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[6]}|$today|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[6]}|$today|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[7]}|$now|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[7]}|$now|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[4]}|barfac$barfac|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[4]}|barfac$barfac|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[5]}|sigr$sigr|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[5]}|sigr$sigr|" hivapein_IFUS0.dat
 
 sed -i "s|${word_line1[0]}|$proj|" hivapein_IFUS10.dat
 sed -i "s|${word_line1[0]}|$proj|" hivapein_IFUS0.dat
-sed -i "s|${word_line1[2]}|$targ|" hivapein_IFUS10.dat
-sed -i "s|${word_line1[2]}|$targ|" hivapein_IFUS0.dat
-sed -i "s|${word_line1[4]}|$cn|" hivapein_IFUS10.dat
-sed -i "s|${word_line1[4]}|$cn|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[1]}|$targ|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[1]}|$targ|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[2]}|$cn|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[2]}|$cn|" hivapein_IFUS0.dat

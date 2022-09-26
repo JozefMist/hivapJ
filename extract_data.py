@@ -23,10 +23,10 @@ for input_file in sys.argv[1:]:
     for line in lines_in_file:
         line_array.append(line.split())  
     
-    output_name = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][2] + '_' + line_array[4][4] + '_allCh_' + line_array[4][5] + '_' + line_array[4][6] + '.dat'
-    output_name_xn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][2] + '_' + line_array[4][4] + '_xn_' + line_array[4][5] + '_' + line_array[4][6] + '.dat'
-    output_name_pxn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][2] + '_' + line_array[4][4] + '_pxn_' + line_array[4][5] + '_' + line_array[4][6] + '.dat'
-    output_name_2pxn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][2] + '_' + line_array[4][4] + '_2pxn_' + line_array[4][5] + '_' + line_array[4][6] + '.dat'
+    output_name = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_allCh_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+    output_name_xn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_xn_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+    output_name_pxn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_pxn_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+    output_name_2pxn = 'MyHivap/data_hivap/' + line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_2pxn_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
 
     temp_xn_name = 'temp_xn.dat'
     temp_pxn_name = 'temp_pxn.dat'
