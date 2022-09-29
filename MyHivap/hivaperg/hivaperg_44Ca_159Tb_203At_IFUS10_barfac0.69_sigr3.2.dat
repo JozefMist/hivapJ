@@ -2,7 +2,7 @@
 
            Bearbeitung F.P.Heﬂberger
            
-   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 26/09/2022 16:50 Sitarcik 
+   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 29/09/2022 11:46 Sitarcik 
            
 
  Unterprogramm SEPENF
@@ -150,7 +150,7 @@ E_lab = 162.333 MeV    E* =  28.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 26/09/2022 16:50 Sitarcik 
+   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 29/09/2022 11:46 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -268,7 +268,7 @@ E_lab = 162.333 MeV    E* =  28.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 26/09/2022 16:50 Sitarcik 
+   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 29/09/2022 11:46 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -386,7 +386,7 @@ E_lab = 162.333 MeV    E* =  28.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 26/09/2022 16:50 Sitarcik 
+   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 29/09/2022 11:46 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -504,7 +504,7 @@ E_lab = 162.333 MeV    E* =  28.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 26/09/2022 16:50 Sitarcik 
+   44Ca 159Tb 203At IFUS10 barfac0.69 sigr3.2 29/09/2022 11:46 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt

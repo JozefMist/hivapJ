@@ -10,11 +10,11 @@ mproj=44
 zproj=20
 mtarg=159
 ztarg=65
-barfac=0.61
+barfac=0.69
 r0=`python3 r0_calc.py $mproj $zproj $mtarg $ztarg`
 q2=0.271
-sigr=3.2
-v0=59
+sigr=3.4
+v0=40
 
 line1=$(sed '1q;d' hivapein_IFUS10.dat)
 line3=$(sed '3q;d' hivapein_IFUS10.dat)
