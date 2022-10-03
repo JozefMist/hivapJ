@@ -1,6 +1,6 @@
-   40Ar 165Ho 205At IFUS0 barfac0.77 sigr3.3 03/10/2022 17:52 Sitarcik
+   24Mg 181Ta 205At IFUS0 barfac0.69 sigr3.2 03/10/2022 10:21 Sitarcik
 ----------------------------------------------------------------------- 
-  MPROJ=40  ZPROJ=18  MTARG=165  ZTARG=67                         
+  MPROJ=24  ZPROJ=12  MTARG=181  ZTARG=73                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
   IBF=1  FISROT PARAMETERS=2                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
@@ -20,7 +20,7 @@
   IF  IGAM NOT ZERO                                                    
   CGIANT=0.0    EGIANT=0     WGIANT=0        STRIPE=0    IOPT=0  
 -----------------------------------------------------------------------
-   LEVELPAR=1.16 AF/AN=1.00 BARFAC=0.77 EDAMP=18.5 BAR0=0.       
+   LEVELPAR=1.16 AF/AN=1.00 BARFAC=0.69 EDAMP=18.5 BAR0=0.       
    SHELL0=0.0 DELT=0  QVALUE=0.                                  
 -----------------------------------------------------------------------
      ONLY IF LIMITS NOT ZERO                                           

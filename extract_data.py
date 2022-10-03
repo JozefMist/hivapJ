@@ -122,7 +122,8 @@ for file_name in output_array:
             os.mkdir(path_results + line_array[4][2].lower() + '/data/')
             shutil.copy(path_data + file_name, path_results + line_array[4][2].lower() + '/data/')
     else:
-        os.mkdir(path_results + line_array[4][2].lower() + '/data/')
+        os.mkdir(path_results + line_array[4][2].lower())
+        os.mkdir(path_results + line_array[4][2].lower()+ '/data/')
         shutil.copy(path_data + file_name, path_results + line_array[4][2].lower() + '/data/')
         
 os.remove(temp_xn_name)

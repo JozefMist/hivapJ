@@ -1,6 +1,6 @@
-   40Ar 165Ho 205At IFUS0 barfac0.77 sigr3.3 03/10/2022 17:52 Sitarcik
+   26Mg 181Ta 207At IFUS0 barfac0.77 sigr3.2 03/10/2022 12:45 Sitarcik
 ----------------------------------------------------------------------- 
-  MPROJ=40  ZPROJ=18  MTARG=165  ZTARG=67                         
+  MPROJ=26  ZPROJ=12  MTARG=181  ZTARG=73                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
   IBF=1  FISROT PARAMETERS=2                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
