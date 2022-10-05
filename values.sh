@@ -2,19 +2,19 @@
 
 #what is produced
 proj=48Ca
-targ=159Tb
-cn=207At
+targ=207Pb
+cn=255No
 
 #here, input new values
 mproj=48
 zproj=20
-mtarg=159
-ztarg=65
-barfac=0.83
+mtarg=207
+ztarg=82
+barfac=1.0
 r0=`python3 r0_calc.py $mproj $zproj $mtarg $ztarg`
-q2=0.271
-sigr=3.2
-v0=40
+q2=-0.008
+sigr=1.5
+v0=70
 
 line1=$(sed '1q;d' hivapein_IFUS10.dat)
 line3=$(sed '3q;d' hivapein_IFUS10.dat)
