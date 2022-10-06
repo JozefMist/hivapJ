@@ -1,0 +1,820 @@
+          Programm HIVAP,  Autor  W.Reisdorf   Version fuer "rzri6f" vom  7. 6. 1994
+
+           Bearbeitung F.P.Heﬂberger
+           
+   45Sc 160Gd 205At IFUS0 barfac0.79 sigr3.2 06/10/2022 14:07 Sitarcik  
+           
+
+ Unterprogramm SEPENF
+
+ benutzt Sierks Programm BARFIT 
+ Q-Wert   -96.397 MeV
+ Massen aus der Datei "mlz.dat" 
+
+         Exp. Schaleneffekte,  SHELL0=    0.00
+          At  199   At  200   At  201   At  202   At  203   At  204   At  205
+             -2.09     -3.32     -3.03     -4.32     -4.10     -5.46     -5.30
+          Po  198   Po  199   Po  200   Po  201   Po  202   Po  203   Po  204
+             -2.02     -3.25     -2.96     -4.26     -4.04     -5.40     -5.25
+          Bi  197   Bi  198   Bi  199   Bi  200   Bi  201   Bi  202   Bi  203
+             -3.56     -4.80     -4.50     -5.80     -5.57     -6.93     -6.77
+
+           BARFAC=   0.790      BAR0=   0.000
+
+          Separationsenergien (BN,BP,BA) und Spaltbarrieren
+          At  199   At  200   At  201   At  202   At  203   At  204   At  205
+              9.96      8.27      9.69      8.00      9.42      7.74      9.16
+              0.77      1.01      1.26      1.50      1.74      1.98      2.22
+             -7.27     -7.04     -6.83     -6.60     -6.39     -6.16     -5.95
+              8.17      9.56      9.42     10.86     10.79     12.28     12.26
+             -0.78     -1.56     -0.78     -1.55     -0.77     -1.54     -0.77
+          Po  198   Po  199   Po  200   Po  201   Po  202   Po  203   Po  204
+              9.72      8.02      9.44      7.76      9.18      7.50      8.92
+              2.75      2.99      3.23      3.48      3.71      3.95      4.19
+             -6.93     -6.70     -6.48     -6.25     -6.03     -5.80     -5.58
+              9.00     10.39     10.26     11.70     11.63     13.12     13.10
+              0.00     -0.78      0.00     -0.78      0.00     -0.77      0.00
+          Bi  197   Bi  198   Bi  199   Bi  200   Bi  201   Bi  202   Bi  203
+              9.47      7.77      9.20      7.51      8.94      7.26      8.68
+              1.61      1.86      2.10      2.35      2.59      2.83      3.07
+             -4.98     -4.74     -4.53     -4.30     -4.08     -3.85     -3.63
+             11.49     12.88     12.74     14.18     14.10     15.60     15.57
+             -0.78     -1.56     -0.78     -1.56     -0.78     -1.55     -0.77
+
+ benutzter Q-Wert   -96.397 MeV    effektiver Q-Wert   -96.397 MeV
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   133.8
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 133.758 MeV    E* =   8.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   135.0
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 135.040 MeV    E* =   9.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   136.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 136.321 MeV    E* =  10.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   137.6
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 137.602 MeV    E* =  11.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   138.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 138.883 MeV    E* =  12.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   140.2
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 140.165 MeV    E* =  13.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   141.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 141.446 MeV    E* =  14.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   142.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 142.727 MeV    E* =  15.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   144.0
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 144.008 MeV    E* =  16.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   145.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 145.290 MeV    E* =  17.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   146.6
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 146.571 MeV    E* =  18.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   147.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 147.852 MeV    E* =  19.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   149.1
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 149.133 MeV    E* =  20.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   150.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 150.415 MeV    E* =  21.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   151.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 151.696 MeV    E* =  22.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   153.0
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 152.977 MeV    E* =  23.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   154.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 154.258 MeV    E* =  24.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   155.5
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 155.540 MeV    E* =  25.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   156.8
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 156.821 MeV    E* =  26.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   158.1
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 158.102 MeV    E* =  27.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   159.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 159.383 MeV    E* =  28.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   160.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 160.665 MeV    E* =  29.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   161.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 161.946 MeV    E* =  30.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   163.2
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 163.227 MeV    E* =  31.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   164.5
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 164.508 MeV    E* =  32.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   165.8
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 165.790 MeV    E* =  33.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   167.1
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 167.071 MeV    E* =  34.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   168.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 168.352 MeV    E* =  35.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   169.6
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 169.633 MeV    E* =  36.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   170.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 170.915 MeV    E* =  37.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   172.2
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 172.196 MeV    E* =  38.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   173.5
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 173.477 MeV    E* =  39.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   174.8
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 174.758 MeV    E* =  40.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   176.0
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 176.040 MeV    E* =  41.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   177.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 177.321 MeV    E* =  42.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   178.6
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 178.602 MeV    E* =  43.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   179.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 179.883 MeV    E* =  44.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   181.2
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 181.165 MeV    E* =  45.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   182.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 182.446 MeV    E* =  46.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   183.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 183.727 MeV    E* =  47.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   185.0
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 185.008 MeV    E* =  48.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   186.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 186.290 MeV    E* =  49.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   187.6
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+
+E_lab = 187.571 MeV    E* =  50.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 nb
+
+
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   188.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   190.1
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   191.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.000       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   192.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.007       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   194.0
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.028       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   195.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.098       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   196.5
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     0.332       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   197.8
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     1.104       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   199.1
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT     3.525       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   200.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT    10.183       -1.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   201.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT    24.168       10.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   202.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT    45.155       18.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   204.2
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT    69.767       23.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   205.5
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT    95.506       28.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   206.8
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   121.353       31.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   208.1
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   146.986       35.
+
+ HIVAP  CASOUT
+
+   45Sc 160Gd 205At IFUS0 barfac0.79 sigr3.2 06/10/2022 14:07 Sitarcik  
+
+
+     E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
+
+   188.852    4.20    51.0  0.1144E-05  0.4801E-06  0.6628E-06    -1.0       57.93
+   190.133    4.23    52.0  0.3874E-05  0.1549E-05  0.2320E-05    -1.0       59.89
+   191.415    4.25    53.0  0.2022E-03  0.7951E-04  0.1224E-03    -1.0       60.55
+   192.696    4.28    54.0  0.6753E-02  0.2230E-02  0.4516E-02    -1.0       66.87
+   193.977    4.31    55.0  0.2759E-01  0.8195E-02  0.1937E-01    -1.0       70.19
+   195.258    4.34    56.0  0.9778E-01  0.2674E-01  0.7092E-01    -1.0       72.53
+   196.540    4.37    57.0  0.3320E+00  0.8500E-01  0.2466E+00    -1.0       74.26
+   197.821    4.40    58.0  0.1104E+01  0.2660E+00  0.8361E+00    -1.0       75.75
+   199.102    4.42    59.0  0.3525E+01  0.7993E+00  0.2720E+01    -1.0       77.17
+   200.383    4.45    60.0  0.1018E+02  0.2149E+01  0.8016E+01    -1.0       78.72
+   201.665    4.48    61.0  0.2417E+02  0.4631E+01  0.1949E+02    10.0       80.66
+   202.946    4.51    62.0  0.4515E+02  0.7586E+01  0.3748E+02    18.0       83.01
+   204.227    4.54    63.0  0.6977E+02  0.9965E+01  0.5967E+02    23.0       85.52
+   205.508    4.57    64.0  0.9551E+02  0.1138E+02  0.8394E+02    28.0       87.89
+   206.790    4.60    65.0  0.1214E+03  0.1197E+02  0.1091E+03    31.0       89.93
+   208.071    4.62    66.0  0.1470E+03  0.1203E+02  0.1346E+03    35.0       91.61
+
+     Querschnitte / mbarn
+
+  E*/MeV   199At     200At     201At     202At     203At     204At     205At  
+    51.0 0.000E+00 0.396E-07 0.313E-06 0.335E-08 0.143E-11 0.000E+00 0.000E+00
+    52.0 0.000E+00 0.214E-06 0.896E-06 0.668E-08 0.261E-11 0.000E+00 0.000E+00
+    53.0 0.000E+00 0.834E-05 0.495E-04 0.658E-06 0.705E-09 0.000E+00 0.000E+00
+    54.0 0.000E+00 0.228E-03 0.138E-02 0.295E-04 0.929E-07 0.000E+00 0.000E+00
+    55.0 0.616E-08 0.114E-02 0.463E-02 0.841E-04 0.307E-06 0.000E+00 0.000E+00
+    56.0 0.218E-06 0.493E-02 0.134E-01 0.194E-03 0.710E-06 0.000E+00 0.000E+00
+    57.0 0.498E-05 0.198E-01 0.369E-01 0.416E-03 0.141E-05 0.000E+00 0.000E+00
+    58.0 0.792E-04 0.744E-01 0.978E-01 0.865E-03 0.267E-05 0.000E+00 0.000E+00
+    59.0 0.890E-03 0.256E+00 0.244E+00 0.173E-02 0.486E-05 0.000E+00 0.000E+00
+    60.0 0.682E-02 0.756E+00 0.538E+00 0.318E-02 0.824E-05 0.000E+00 0.000E+00
+    61.0 0.330E-01 0.171E+01 0.950E+00 0.497E-02 0.124E-04 0.000E+00 0.000E+00
+    62.0 0.101E+00 0.283E+01 0.128E+01 0.628E-02 0.152E-04 0.000E+00 0.000E+00
+    63.0 0.219E+00 0.365E+01 0.137E+01 0.655E-02 0.159E-04 0.000E+00 0.000E+00
+    64.0 0.380E+00 0.399E+01 0.125E+01 0.587E-02 0.132E-04 0.000E+00 0.000E+00
+    65.0 0.572E+00 0.397E+01 0.103E+01 0.467E-02 0.888E-05 0.000E+00 0.000E+00
+    66.0 0.785E+00 0.370E+01 0.782E+00 0.338E-02 0.448E-05 0.000E+00 0.000E+00
+
+  E*/MeV   198Po     199Po     200Po     201Po     202Po     203Po     204Po  
+    51.0 0.000E+00 0.000E+00 0.358E-07 0.679E-07 0.204E-08 0.137E-12 0.000E+00
+    52.0 0.000E+00 0.804E-12 0.159E-06 0.205E-06 0.435E-08 0.216E-12 0.000E+00
+    53.0 0.000E+00 0.381E-10 0.643E-05 0.108E-04 0.325E-06 0.413E-10 0.000E+00
+    54.0 0.000E+00 0.174E-08 0.152E-03 0.321E-03 0.179E-04 0.435E-08 0.000E+00
+    55.0 0.000E+00 0.396E-07 0.735E-03 0.113E-02 0.565E-04 0.141E-07 0.000E+00
+    56.0 0.000E+00 0.660E-06 0.312E-02 0.344E-02 0.145E-03 0.338E-07 0.000E+00
+    57.0 0.000E+00 0.868E-05 0.125E-01 0.985E-02 0.343E-03 0.694E-07 0.000E+00
+    58.0 0.000E+00 0.924E-04 0.476E-01 0.270E-01 0.779E-03 0.131E-06 0.000E+00
+    59.0 0.000E+00 0.791E-03 0.168E+00 0.698E-01 0.170E-02 0.228E-06 0.000E+00
+    60.0 0.000E+00 0.512E-02 0.512E+00 0.160E+00 0.341E-02 0.361E-06 0.000E+00
+    61.0 0.000E+00 0.228E-01 0.122E+01 0.297E+00 0.589E-02 0.526E-06 0.000E+00
+    62.0 0.000E+00 0.682E-01 0.216E+01 0.428E+00 0.841E-02 0.602E-06 0.000E+00
+    63.0 0.125E-05 0.150E+00 0.303E+01 0.500E+00 0.101E-01 0.757E-06 0.000E+00
+    64.0 0.833E-05 0.270E+00 0.365E+01 0.507E+00 0.107E-01 0.861E-06 0.000E+00
+    65.0 0.422E-04 0.427E+00 0.399E+01 0.466E+00 0.100E-01 0.865E-06 0.000E+00
+    66.0 0.174E-03 0.620E+00 0.409E+01 0.397E+00 0.853E-02 0.755E-06 0.000E+00
+
+  E*/MeV   197Bi     198Bi     199Bi     200Bi     201Bi     202Bi     203Bi  
+    51.0 0.161E-08 0.142E-07 0.168E-08 0.626E-10 0.756E-09 0.245E-10 0.281E-13
+    52.0 0.879E-08 0.486E-07 0.388E-08 0.363E-09 0.273E-08 0.561E-10 0.531E-13
+    53.0 0.336E-06 0.274E-05 0.230E-06 0.186E-07 0.153E-06 0.418E-08 0.398E-11
+    54.0 0.105E-04 0.773E-04 0.889E-05 0.597E-06 0.460E-05 0.129E-06 0.387E-09
+    55.0 0.628E-04 0.303E-03 0.289E-04 0.354E-05 0.182E-04 0.396E-06 0.132E-08
+    56.0 0.319E-03 0.101E-02 0.773E-04 0.183E-04 0.631E-04 0.101E-05 0.344E-08
+    57.0 0.149E-02 0.317E-02 0.191E-03 0.881E-04 0.207E-03 0.239E-05 0.781E-08
+    58.0 0.650E-02 0.943E-02 0.453E-03 0.396E-03 0.649E-03 0.546E-05 0.167E-07
+    59.0 0.258E-01 0.262E-01 0.104E-02 0.162E-02 0.191E-02 0.119E-04 0.340E-07
+    60.0 0.874E-01 0.644E-01 0.226E-02 0.564E-02 0.493E-02 0.236E-04 0.653E-07
+    61.0 0.230E+00 0.128E+00 0.443E-02 0.151E-01 0.102E-01 0.399E-04 0.113E-06
+    62.0 0.451E+00 0.197E+00 0.757E-02 0.295E-01 0.160E-01 0.558E-04 0.174E-06
+    63.0 0.701E+00 0.249E+00 0.116E-01 0.452E-01 0.204E-01 0.670E-04 0.240E-06
+    64.0 0.933E+00 0.276E+00 0.164E-01 0.592E-01 0.227E-01 0.723E-04 0.300E-06
+    65.0 0.112E+01 0.278E+00 0.222E-01 0.701E-01 0.231E-01 0.720E-04 0.343E-06
+    66.0 0.126E+01 0.261E+00 0.291E-01 0.778E-01 0.221E-01 0.674E-04 0.364E-06
+
+ Z-Verteilung  
+ E*/MeV     Bi         Po         At  
+   51.0  0.184E-07 0.106E-06 0.356E-06
+   52.0  0.644E-07 0.369E-06 0.112E-05
+   53.0  0.348E-05 0.176E-04 0.585E-04
+   54.0  0.102E-03 0.492E-03 0.164E-02
+   55.0  0.417E-03 0.192E-02 0.585E-02
+   56.0  0.149E-02 0.671E-02 0.185E-01
+   57.0  0.515E-02 0.227E-01 0.571E-01
+   58.0  0.174E-01 0.755E-01 0.173E+00
+   59.0  0.566E-01 0.240E+00 0.503E+00
+   60.0  0.165E+00 0.681E+00 0.130E+01
+   61.0  0.387E+00 0.154E+01 0.270E+01
+   62.0  0.701E+00 0.267E+01 0.422E+01
+   63.0  0.103E+01 0.369E+01 0.524E+01
+   64.0  0.131E+01 0.444E+01 0.563E+01
+   65.0  0.152E+01 0.489E+01 0.557E+01
+   66.0  0.165E+01 0.511E+01 0.527E+01
+
+ Z und A Mittelwerte    
+   E*/MeV     MW.Z  St.Abw.Z      MW.A  St.Abw.A
+    51.0     84.70      0.53    200.74      0.66
+    52.0     84.68      0.55    200.64      0.71
+    53.0     84.69      0.55    200.70      0.71
+    54.0     84.69      0.55    200.72      0.72
+    55.0     84.66      0.57    200.64      0.77
+    56.0     84.64      0.59    200.54      0.81
+    57.0     84.61      0.60    200.44      0.84
+    58.0     84.59      0.61    200.34      0.86
+    59.0     84.56      0.62    200.24      0.88
+    60.0     84.53      0.63    200.14      0.90
+    61.0     84.50      0.65    200.06      0.92
+    62.0     84.46      0.66    199.98      0.95
+    63.0     84.42      0.67    199.89      0.98
+    64.0     84.38      0.68    199.81      1.01
+    65.0     84.34      0.69    199.72      1.04
+    66.0     84.30      0.70    199.63      1.05
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   209.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   172.313       38.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   210.6
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   197.312       41.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   211.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   221.980       43.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   213.2
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   246.322       46.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   214.5
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   270.344       48.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   215.8
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   294.049       50.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   217.0
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   317.447       53.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   218.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   340.541       55.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   219.6
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   363.337       57.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   220.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   385.841       59.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   222.2
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   408.058       60.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   223.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   429.991       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   224.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   451.645       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   226.0
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   473.017       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   227.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   494.096       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   228.6
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   514.837       77.
+
+ HIVAP  CASOUT
+
+   45Sc 160Gd 205At IFUS0 barfac0.79 sigr3.2 06/10/2022 14:07 Sitarcik  
+
+
+     E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
+
+   209.352    4.65    67.0  0.1723E+03  0.1179E+02  0.1602E+03    38.0       92.94
+   210.633    4.68    68.0  0.1973E+03  0.1138E+02  0.1855E+03    41.0       94.00
+   211.915    4.71    69.0  0.2220E+03  0.1090E+02  0.2105E+03    43.0       94.85
+   213.196    4.74    70.0  0.2463E+03  0.1038E+02  0.2353E+03    46.0       95.53
+   214.477    4.77    71.0  0.2703E+03  0.9840E+01  0.2597E+03    48.0       96.08
+   215.758    4.79    72.0  0.2940E+03  0.9300E+01  0.2839E+03    50.0       96.54
+   217.040    4.82    73.0  0.3174E+03  0.8759E+01  0.3077E+03    53.0       96.92
+   218.321    4.85    74.0  0.3405E+03  0.8223E+01  0.3312E+03    55.0       97.25
+   219.602    4.88    75.0  0.3633E+03  0.7694E+01  0.3544E+03    57.0       97.53
+   220.883    4.91    76.0  0.3858E+03  0.7177E+01  0.3773E+03    59.0       97.78
+   222.165    4.94    77.0  0.4081E+03  0.6678E+01  0.3998E+03    60.0       97.99
+   223.446    4.97    78.0  0.4300E+03  0.6200E+01  0.4221E+03    77.0       98.17
+   224.727    4.99    79.0  0.4516E+03  0.5750E+01  0.4441E+03    77.0       98.34
+   226.008    5.02    80.0  0.4730E+03  0.5333E+01  0.4658E+03    77.0       98.48
+   227.290    5.05    81.0  0.4941E+03  0.4950E+01  0.4872E+03    77.0       98.60
+   228.571    5.08    82.0  0.5149E+03  0.4601E+01  0.5083E+03    77.0       98.71
+
+     Querschnitte / mbarn
+
+  E*/MeV   199At     200At     201At     202At     203At     204At     205At  
+    67.0 0.100E+01 0.332E+01 0.570E+00 0.228E-02 0.000E+00 0.000E+00 0.000E+00
+    68.0 0.122E+01 0.289E+01 0.404E+00 0.147E-02 0.000E+00 0.000E+00 0.000E+00
+    69.0 0.142E+01 0.245E+01 0.282E+00 0.915E-03 0.000E+00 0.000E+00 0.000E+00
+    70.0 0.159E+01 0.204E+01 0.194E+00 0.560E-03 0.000E+00 0.000E+00 0.000E+00
+    71.0 0.172E+01 0.167E+01 0.133E+00 0.340E-03 0.000E+00 0.000E+00 0.000E+00
+    72.0 0.180E+01 0.134E+01 0.904E-01 0.205E-03 0.000E+00 0.000E+00 0.000E+00
+    73.0 0.184E+01 0.106E+01 0.611E-01 0.122E-03 0.000E+00 0.000E+00 0.000E+00
+    74.0 0.183E+01 0.827E+00 0.411E-01 0.727E-04 0.000E+00 0.000E+00 0.000E+00
+    75.0 0.178E+01 0.637E+00 0.275E-01 0.428E-04 0.000E+00 0.000E+00 0.000E+00
+    76.0 0.169E+01 0.485E+00 0.183E-01 0.249E-04 0.000E+00 0.000E+00 0.000E+00
+    77.0 0.156E+01 0.366E+00 0.122E-01 0.141E-04 0.000E+00 0.000E+00 0.000E+00
+    78.0 0.142E+01 0.273E+00 0.807E-02 0.727E-05 0.000E+00 0.000E+00 0.000E+00
+    79.0 0.127E+01 0.202E+00 0.532E-02 0.346E-05 0.000E+00 0.000E+00 0.000E+00
+    80.0 0.111E+01 0.148E+00 0.350E-02 0.912E-06 0.000E+00 0.000E+00 0.000E+00
+    81.0 0.955E+00 0.108E+00 0.229E-02 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+    82.0 0.810E+00 0.780E-01 0.150E-02 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+  E*/MeV   198Po     199Po     200Po     201Po     202Po     203Po     204Po  
+    67.0 0.603E-03 0.844E+00 0.400E+01 0.320E+00 0.666E-02 0.558E-06 0.000E+00
+    68.0 0.181E-02 0.109E+01 0.379E+01 0.247E+00 0.485E-02 0.302E-06 0.000E+00
+    69.0 0.476E-02 0.135E+01 0.350E+01 0.184E+00 0.335E-02 0.533E-07 0.000E+00
+    70.0 0.112E-01 0.161E+01 0.316E+01 0.134E+00 0.224E-02 0.000E+00 0.000E+00
+    71.0 0.236E-01 0.186E+01 0.280E+01 0.964E-01 0.146E-02 0.000E+00 0.000E+00
+    72.0 0.456E-01 0.208E+01 0.243E+01 0.683E-01 0.942E-03 0.000E+00 0.000E+00
+    73.0 0.810E-01 0.226E+01 0.208E+01 0.480E-01 0.602E-03 0.000E+00 0.000E+00
+    74.0 0.134E+00 0.240E+01 0.175E+01 0.334E-01 0.383E-03 0.000E+00 0.000E+00
+    75.0 0.208E+00 0.248E+01 0.145E+01 0.231E-01 0.242E-03 0.000E+00 0.000E+00
+    76.0 0.304E+00 0.250E+01 0.119E+01 0.159E-01 0.153E-03 0.000E+00 0.000E+00
+    77.0 0.422E+00 0.247E+01 0.961E+00 0.109E-01 0.956E-04 0.000E+00 0.000E+00
+    78.0 0.561E+00 0.239E+01 0.767E+00 0.739E-02 0.596E-04 0.000E+00 0.000E+00
+    79.0 0.715E+00 0.227E+01 0.605E+00 0.500E-02 0.370E-04 0.000E+00 0.000E+00
+    80.0 0.879E+00 0.212E+01 0.473E+00 0.337E-02 0.228E-04 0.000E+00 0.000E+00
+    81.0 0.105E+01 0.193E+01 0.366E+00 0.226E-02 0.140E-04 0.000E+00 0.000E+00
+    82.0 0.121E+01 0.174E+01 0.280E+00 0.151E-02 0.830E-05 0.000E+00 0.000E+00
+
+  E*/MeV   197Bi     198Bi     199Bi     200Bi     201Bi     202Bi     203Bi  
+    67.0 0.135E+01 0.231E+00 0.372E-01 0.823E-01 0.201E-01 0.598E-04 0.359E-06
+    68.0 0.139E+01 0.195E+00 0.468E-01 0.841E-01 0.177E-01 0.505E-04 0.329E-06
+    69.0 0.138E+01 0.158E+00 0.580E-01 0.834E-01 0.151E-01 0.407E-04 0.280E-06
+    70.0 0.134E+01 0.124E+00 0.706E-01 0.805E-01 0.127E-01 0.314E-04 0.221E-06
+    71.0 0.128E+01 0.949E-01 0.843E-01 0.760E-01 0.104E-01 0.232E-04 0.163E-06
+    72.0 0.119E+01 0.717E-01 0.987E-01 0.703E-01 0.834E-02 0.166E-04 0.111E-06
+    73.0 0.109E+01 0.541E-01 0.113E+00 0.637E-01 0.571E-02 0.116E-04 0.721E-07
+    74.0 0.978E+00 0.415E-01 0.127E+00 0.567E-01 0.415E-02 0.786E-05 0.447E-07
+    75.0 0.865E+00 0.334E-01 0.140E+00 0.497E-01 0.267E-02 0.524E-05 0.263E-07
+    76.0 0.752E+00 0.293E-01 0.150E+00 0.422E-01 0.166E-02 0.345E-05 0.145E-07
+    77.0 0.645E+00 0.288E-01 0.159E+00 0.353E-01 0.113E-02 0.225E-05 0.661E-08
+    78.0 0.545E+00 0.317E-01 0.165E+00 0.268E-01 0.680E-03 0.146E-05 0.525E-09
+    79.0 0.454E+00 0.375E-01 0.168E+00 0.188E-01 0.458E-03 0.934E-06 0.000E+00
+    80.0 0.374E+00 0.461E-01 0.168E+00 0.133E-01 0.321E-03 0.592E-06 0.000E+00
+    81.0 0.304E+00 0.570E-01 0.166E+00 0.889E-02 0.205E-03 0.373E-06 0.000E+00
+    82.0 0.245E+00 0.698E-01 0.160E+00 0.589E-02 0.139E-03 0.233E-06 0.000E+00
+
+ Z-Verteilung  
+ E*/MeV     Bi         Po         At  
+   67.0  0.172E+01 0.517E+01 0.490E+01
+   68.0  0.173E+01 0.514E+01 0.451E+01
+   69.0  0.170E+01 0.504E+01 0.415E+01
+   70.0  0.163E+01 0.492E+01 0.382E+01
+   71.0  0.154E+01 0.478E+01 0.352E+01
+   72.0  0.144E+01 0.463E+01 0.323E+01
+   73.0  0.133E+01 0.447E+01 0.296E+01
+   74.0  0.121E+01 0.432E+01 0.270E+01
+   75.0  0.109E+01 0.416E+01 0.244E+01
+   76.0  0.976E+00 0.401E+01 0.219E+01
+   77.0  0.869E+00 0.387E+01 0.194E+01
+   78.0  0.769E+00 0.373E+01 0.170E+01
+   79.0  0.679E+00 0.360E+01 0.147E+01
+   80.0  0.602E+00 0.347E+01 0.126E+01
+   81.0  0.536E+00 0.335E+01 0.107E+01
+   82.0  0.481E+00 0.323E+01 0.889E+00
+
+ Z und A Mittelwerte    
+   E*/MeV     MW.Z  St.Abw.Z      MW.A  St.Abw.A
+    67.0     84.27      0.70    199.54      1.06
+    68.0     84.24      0.70    199.45      1.06
+    69.0     84.23      0.70    199.37      1.06
+    70.0     84.21      0.69    199.30      1.04
+    71.0     84.20      0.69    199.24      1.02
+    72.0     84.19      0.68    199.18      0.99
+    73.0     84.19      0.67    199.13      0.96
+    74.0     84.18      0.67    199.08      0.92
+    75.0     84.18      0.65    199.04      0.89
+    76.0     84.17      0.64    198.99      0.85
+    77.0     84.16      0.63    198.95      0.82
+    78.0     84.15      0.61    198.91      0.79
+    79.0     84.14      0.60    198.86      0.76
+    80.0     84.12      0.58    198.81      0.74
+    81.0     84.11      0.56    198.75      0.71
+    82.0     84.09      0.54    198.70      0.69
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   229.9
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   535.104       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   231.1
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   554.524       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   232.4
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   572.160       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   233.7
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   586.174       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   235.0
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   594.552       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   236.3
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   597.327       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   237.5
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   596.610       77.
+
+ PARAP      V0=  67.000      R0=   1.170      D=   0.574      ELAB=   238.8
+ ZERO FISSION BARRIER LIMITED  SIGFUS,LCRIT   594.338       77.
+
+ HIVAP  CASOUT
+
+   45Sc 160Gd 205At IFUS0 barfac0.79 sigr3.2 06/10/2022 14:07 Sitarcik  
+
+
+     E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
+
+   229.852    5.11    83.0  0.5354E+03  0.4331E+01  0.5289E+03    77.0       98.80
+   231.133    5.14    84.0  0.5553E+03  0.4036E+01  0.5490E+03    77.0       98.88
+   232.415    5.16    85.0  0.5741E+03  0.3768E+01  0.5681E+03    77.0       98.95
+   233.696    5.19    86.0  0.5907E+03  0.3522E+01  0.5849E+03    77.0       99.01
+   234.977    5.22    87.0  0.6030E+03  0.3297E+01  0.5973E+03    77.0       99.06
+   236.258    5.25    88.0  0.6094E+03  0.3101E+01  0.6038E+03    77.0       99.09
+   237.540    5.28    89.0  0.6108E+03  0.2874E+01  0.6054E+03    77.0       99.12
+   238.821    5.31    90.0  0.6093E+03  0.2659E+01  0.6041E+03    77.0       99.14
+
+     Querschnitte / mbarn
+
+  E*/MeV   199At     200At     201At     202At     203At     204At     205At  
+    83.0 0.677E+00 0.561E-01 0.976E-03 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+    84.0 0.558E+00 0.401E-01 0.633E-03 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+    85.0 0.455E+00 0.285E-01 0.409E-03 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+    86.0 0.366E+00 0.202E-01 0.264E-03 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+    87.0 0.292E+00 0.142E-01 0.169E-03 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+    88.0 0.230E+00 0.996E-02 0.108E-03 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+    89.0 0.180E+00 0.696E-02 0.686E-04 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+    90.0 0.140E+00 0.484E-02 0.432E-04 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+  E*/MeV   198Po     199Po     200Po     201Po     202Po     203Po     204Po  
+    83.0 0.136E+01 0.154E+01 0.213E+00 0.100E-02 0.490E-05 0.000E+00 0.000E+00
+    84.0 0.150E+01 0.134E+01 0.161E+00 0.661E-03 0.267E-05 0.000E+00 0.000E+00
+    85.0 0.161E+01 0.115E+01 0.120E+00 0.436E-03 0.128E-05 0.000E+00 0.000E+00
+    86.0 0.170E+01 0.976E+00 0.893E-01 0.286E-03 0.461E-06 0.000E+00 0.000E+00
+    87.0 0.175E+01 0.818E+00 0.660E-01 0.187E-03 0.000E+00 0.000E+00 0.000E+00
+    88.0 0.178E+01 0.677E+00 0.484E-01 0.121E-03 0.000E+00 0.000E+00 0.000E+00
+    89.0 0.177E+01 0.554E+00 0.353E-01 0.786E-04 0.000E+00 0.000E+00 0.000E+00
+    90.0 0.174E+01 0.449E+00 0.256E-01 0.506E-04 0.000E+00 0.000E+00 0.000E+00
+
+  E*/MeV   197Bi     198Bi     199Bi     200Bi     201Bi     202Bi     203Bi  
+    83.0 0.240E+00 0.771E-01 0.158E+00 0.619E-02 0.850E-04 0.142E-06 0.000E+00
+    84.0 0.193E+00 0.908E-01 0.149E+00 0.395E-02 0.543E-04 0.851E-07 0.000E+00
+    85.0 0.155E+00 0.105E+00 0.138E+00 0.252E-02 0.335E-04 0.492E-07 0.000E+00
+    86.0 0.126E+00 0.119E+00 0.125E+00 0.152E-02 0.197E-04 0.270E-07 0.000E+00
+    87.0 0.109E+00 0.132E+00 0.112E+00 0.886E-03 0.110E-04 0.126E-07 0.000E+00
+    88.0 0.111E+00 0.132E+00 0.112E+00 0.514E-03 0.580E-05 0.293E-09 0.000E+00
+    89.0 0.963E-01 0.143E+00 0.842E-01 0.292E-03 0.259E-05 0.000E+00 0.000E+00
+    90.0 0.881E-01 0.151E+00 0.618E-01 0.162E-03 0.000E+00 0.000E+00 0.000E+00
+
+ Z-Verteilung  
+ E*/MeV     Bi         Po         At  
+   83.0  0.482E+00 0.311E+01 0.734E+00
+   84.0  0.437E+00 0.300E+01 0.599E+00
+   85.0  0.400E+00 0.288E+01 0.484E+00
+   86.0  0.371E+00 0.276E+01 0.387E+00
+   87.0  0.353E+00 0.264E+01 0.306E+00
+   88.0  0.356E+00 0.250E+01 0.240E+00
+   89.0  0.323E+00 0.236E+01 0.187E+00
+   90.0  0.301E+00 0.221E+01 0.144E+00
+
+ Z und A Mittelwerte    
+   E*/MeV     MW.Z  St.Abw.Z      MW.A  St.Abw.A
+    83.0     84.06      0.53    198.62      0.69
+    84.0     84.04      0.50    198.56      0.67
+    85.0     84.02      0.48    198.50      0.64
+    86.0     84.00      0.46    198.44      0.62
+    87.0     83.99      0.45    198.39      0.59
+    88.0     83.96      0.44    198.33      0.58
+    89.0     83.95      0.42    198.28      0.55
+    90.0     83.94      0.41    198.23      0.52
+                                                                        
+           
+
+
+
+ Ende HIVAP 

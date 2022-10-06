@@ -2,7 +2,7 @@
 
            Bearbeitung F.P.Heﬂberger
            
-   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 04/10/2022 10:25 Sitarcik 
+   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 06/10/2022 14:50 Sitarcik 
            
 
  Unterprogramm SEPENF
@@ -190,7 +190,7 @@ E_lab =  97.115 MeV    E* =  36.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 04/10/2022 10:25 Sitarcik 
+   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 06/10/2022 14:50 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -308,7 +308,7 @@ E_lab =  97.115 MeV    E* =  36.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 04/10/2022 10:25 Sitarcik 
+   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 06/10/2022 14:50 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -426,7 +426,7 @@ E_lab =  97.115 MeV    E* =  36.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 04/10/2022 10:25 Sitarcik 
+   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 06/10/2022 14:50 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -544,7 +544,7 @@ E_lab =  97.115 MeV    E* =  36.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 04/10/2022 10:25 Sitarcik 
+   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 06/10/2022 14:50 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -662,7 +662,7 @@ E_lab =  97.115 MeV    E* =  36.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 04/10/2022 10:25 Sitarcik 
+   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 06/10/2022 14:50 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -780,7 +780,7 @@ E_lab =  97.115 MeV    E* =  36.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 04/10/2022 10:25 Sitarcik 
+   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 06/10/2022 14:50 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -898,7 +898,7 @@ E_lab =  97.115 MeV    E* =  36.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 04/10/2022 10:25 Sitarcik 
+   24Mg 181Ta 205At IFUS10 barfac0.79 sigr3.2 06/10/2022 14:50 Sitarcik 
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt

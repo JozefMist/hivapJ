@@ -1,4 +1,4 @@
-   40Ar 165Ho 205At IFUS0 barfac0.81 sigr3.3 03/10/2022 18:41 Sitarcik
+   40Ar 165Ho 205At IFUS0 barfac0.81 sigr3.3 06/10/2022 14:07 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=40  ZPROJ=18  MTARG=165  ZTARG=67                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
@@ -6,7 +6,7 @@
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 
-  NEUTRONS=9 PROTONS=3
+  NEUTRONS=10 PROTONS=3
   MASSES LOG UNIT=9  NUMB=0  IOVER=1  INERT=0  INERF=0 FINERT=1   
   LIMITS=1  PRINT=5  LOGUN=0  ICOR=0  ISOMERS=0 LEVDENS=1        
   IRAST=0  WKB=1  ITRANS=0  JFJI =1                                
