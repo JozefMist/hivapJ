@@ -1,16 +1,16 @@
 A_CN,Bf,reaction
 195,0.6,54Fe+141Pr (RITU)\n51V+144Sm (SHIP)
-196,np.nan,np.nan
+196,0,np.nan
 197,0.66,56Fe+141Pr (RITU & SHIP)
 198,0.67,51V+147Sm (RITU)
 199,0.78,40Ca+159Tb (JINR)
-200,np.nan,np.nan
+200,0,np.nan
 201,0.65,45Sc+156Gd (MARS)
 202,0.66,45SC+157Gd (MARS)
 203,0.66,45Sc+158Gd (MARS)
 203,0.68,44Ca+159Gd (MARS)
-204,np.nan,np.nan
+204,0,np.nan
 205,0.68,45Sc+160Gd (MARS)
 205,0.81,40Ar+165Ho
-206,np.nan,np.nan
+206,0,np.nan
 207,0.82,np.nan
