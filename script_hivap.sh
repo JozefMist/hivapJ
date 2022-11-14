@@ -2,7 +2,7 @@
 
 echo Updating input values
 echo
-./values.sh
+./values.sh $1
 echo
 echo Changing mode to IFUS=0
 echo

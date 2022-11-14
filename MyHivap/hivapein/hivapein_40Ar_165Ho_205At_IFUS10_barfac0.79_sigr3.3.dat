@@ -1,4 +1,4 @@
-   40Ar 165Ho 205At IFUS10 barfac0.79 sigr3.3 27/10/2022 15:29 Sitarcik
+   40Ar 165Ho 205At IFUS10 barfac0.79 sigr3.3 04/11/2022 16:11 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=40  ZPROJ=18  MTARG=165  ZTARG=67                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
@@ -561,6 +561,7 @@ CUT=.1E-6 FRACT2=.1E-6 ABSMIN=0 PRCN=0 SIGLOW=0 DEL1=0 NOLEP=0 =0 =0
  V0=40 r0=1.10527 D=0.75 Q2=0.293   CRED=1.0 NOCURV=0 NOPROX=0 IOPT=0
  ITEST=0 sigr=3.3 
 -----------------------------------------------------------------------
+
 
   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  
                                    
