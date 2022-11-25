@@ -1,6 +1,6 @@
-   90Zr 103Rh 193At IFUS0 barfac0.59 sigr3.0 14/11/2022 10:49 Sitarcik
+   56Fe 154Sm 210Ra IFUS0 barfac0.80 sigr3.5 25/11/2022 16:11 Sitarcik
 ----------------------------------------------------------------------- 
-  MPROJ=90  ZPROJ=40  MTARG=103  ZTARG=45                         
+  MPROJ=56  ZPROJ=26  MTARG=154  ZTARG=62                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
   IBF=1  FISROT PARAMETERS=2                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
@@ -20,7 +20,7 @@
   IF  IGAM NOT ZERO                                                    
   CGIANT=0.0    EGIANT=0     WGIANT=0        STRIPE=0    IOPT=0  
 -----------------------------------------------------------------------
-   LEVELPAR=1.16 AF/AN=1.00 BARFAC=0.59 EDAMP=18.5 BAR0=0.       
+   LEVELPAR=1.16 AF/AN=1.00 BARFAC=0.80 EDAMP=18.5 BAR0=0.       
    SHELL0=0.0 DELT=0  QVALUE=0.                                  
 -----------------------------------------------------------------------
      ONLY IF LIMITS NOT ZERO                                           

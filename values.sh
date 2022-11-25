@@ -1,19 +1,19 @@
 #!/bin/bash
 
 #what is produced
-proj=90Zr
-targ=103Rh
-cn=193At
+proj=56Fe
+targ=154Sm
+cn=210Ra
 
 #here, input new values
-mproj=90
-zproj=40
-mtarg=103
-ztarg=45
+mproj=56
+zproj=26
+mtarg=154
+ztarg=62
 barfac=$1
 r0=`python3 r0_calc.py $mproj $zproj $mtarg $ztarg`
-q2=0.18
-sigr=3.0
+q2=0.27
+sigr=3.5
 v0=40
 
 line1=$(sed '1q;d' hivapein_IFUS10.dat)

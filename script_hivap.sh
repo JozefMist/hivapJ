@@ -8,7 +8,7 @@ echo Changing mode to IFUS=0
 echo
 ./ifus_mode_0.sh
 echo
-echo Running HIVAP for IFUS=0
+echo Running HIVAP for IFUS=0, BF=$1
 echo
 ./hivapn
 echo
@@ -22,7 +22,7 @@ echo Changing mode to IFUS=10
 echo
 ./ifus_mode_10.sh
 echo
-echo Running HIVAP for IFUS=10
+echo Running HIVAP for IFUS=10, BF=$1
 echo
 ./hivapn
 echo
