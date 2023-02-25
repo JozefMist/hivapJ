@@ -31,21 +31,26 @@ for input_file in sys.argv[1:]:
     output_name_xn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_xn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
     output_name_pxn =  line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
     output_name_2pxn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_2pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+    output_name_3pxn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_3pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+
 
     temp_xn_name = 'temp_xn.dat'
     temp_pxn_name = 'temp_pxn.dat'
     temp_2pxn_name = 'temp_2pxn.dat'
+    temp_3pxn_name = 'temp_3pxn.dat'
     temp_elab_name = 'temp_elab.dat'
 
     temp_xn = open(temp_xn_name, 'w')
     temp_pxn = open(temp_pxn_name, 'w')
     temp_2pxn = open(temp_2pxn_name, 'w')
+    temp_3pxn = open(temp_3pxn_name, 'w')
     temp_elab = open(temp_elab_name, 'w')
     
     output = open(path_data + output_name, 'w')
     output_xn = open(path_data + output_name_xn, 'w')
     output_pxn = open(path_data + output_name_pxn, 'w')
     output_2pxn = open(path_data + output_name_2pxn, 'w')
+    output_3pxn = open(path_data + output_name_3pxn, 'w')
 
     i = 0
     while i < (len(line_array)-2):
@@ -63,6 +68,10 @@ for input_file in sys.argv[1:]:
                 temp_2pxn.write('\t'.join(line_array[i]) + '\n')
                 i += 1
             i += 1
+            while len(line_array[i]) != 0:
+                temp_3pxn.write('\t'.join(line_array[i]) + '\n')
+                i += 1
+            i += 1
             if len(line_array[i]) != 0 and line_array[i][0] == 'Z-Verteilung':
                 i += 1
                 continue
@@ -74,12 +83,12 @@ for input_file in sys.argv[1:]:
                 i += 1
         i += 1
     
-    temp_array = [temp_xn, temp_pxn, temp_2pxn, temp_elab]
+    temp_array = [temp_xn, temp_pxn, temp_2pxn, temp_3pxn, temp_elab]
 
     for item in temp_array:
         item.close()
 
-    temp_array_name = [temp_xn_name, temp_pxn_name, temp_2pxn_name, temp_elab_name]
+    temp_array_name = [temp_xn_name, temp_pxn_name, temp_2pxn_name, temp_3pxn_name, temp_elab_name]
 
     for item in temp_array_name:
         f = open(item, 'r')
@@ -94,7 +103,7 @@ for input_file in sys.argv[1:]:
 
     temp_array_name.pop()
 
-    output_array = [output_name_xn, output_name_pxn, output_name_2pxn]
+    output_array = [output_name_xn, output_name_pxn, output_name_2pxn, output_name_3pxn]
     
     temp_elab = open(temp_elab_name, 'r')
     elab_lines = temp_elab.readlines()
@@ -129,4 +138,5 @@ for file_name in output_array:
 os.remove(temp_xn_name)
 os.remove(temp_pxn_name)
 os.remove(temp_2pxn_name)
+os.remove(temp_3pxn_name)
 os.remove(temp_elab_name)

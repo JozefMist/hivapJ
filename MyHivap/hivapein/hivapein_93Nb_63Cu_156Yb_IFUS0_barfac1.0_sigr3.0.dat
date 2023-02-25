@@ -1,6 +1,6 @@
-   93Nb 65Cu 158Yb IFUS0 barfac1.0 sigr3.0 25/02/2023 10:42 Sitarcik
+   93Nb 63Cu 156Yb IFUS0 barfac1.0 sigr3.0 25/02/2023 10:07 Sitarcik
 ----------------------------------------------------------------------- 
-  MPROJ=93  ZPROJ=41  MTARG=65  ZTARG=29                         
+  MPROJ=93  ZPROJ=41  MTARG=63  ZTARG=29                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
   IBF=1  FISROT PARAMETERS=2                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   

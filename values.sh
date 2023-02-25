@@ -1,18 +1,18 @@
 #!/bin/bash
 
 #what is produced
-proj=15N
-targ=248Cm
-cn=263Lr
+proj=93Nb
+targ=65Cu
+cn=158Yb
 
 #here, input new values
-mproj=15
-zproj=7
-mtarg=248
-ztarg=96
+mproj=93
+zproj=41
+mtarg=65
+ztarg=29
 barfac=$1
 r0=`python3 r0_calc.py $mproj $zproj $mtarg $ztarg`
-q2=0.217
+q2=-0.156
 sigr=3.0
 v0=40
 
