@@ -1,4 +1,4 @@
-   52Cr 144Sm 196Rn IFUS10 barfac0.63 sigr2.5 25/11/2022 12:05 Sitarcik
+   52Cr 144Sm 196Rn IFUS10 barfac0.63 sigr2.5 11/07/2023 15:10 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=52  ZPROJ=24  MTARG=144  ZTARG=62                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
@@ -6,7 +6,7 @@
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 
-  NEUTRONS=7 PROTONS=3
+  NEUTRONS=10 PROTONS=4
   MASSES LOG UNIT=9  NUMB=0  IOVER=1  INERT=0  INERF=0 FINERT=1   
   LIMITS=1  PRINT=5  LOGUN=0  ICOR=0  ISOMERS=0 LEVDENS=1        
   IRAST=0  WKB=1  ITRANS=0  JFJI =1                                

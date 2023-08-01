@@ -2,7 +2,7 @@
 
            Bearbeitung F.P.Heﬂberger
            
-   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 25/02/2023 10:42 Sitarcik   
+   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 05/04/2023 14:59 Sitarcik   
            
 
  Unterprogramm SEPENF
@@ -153,7 +153,7 @@ E_lab = 306.617 MeV    E* =  27.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 25/02/2023 10:42 Sitarcik   
+   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 05/04/2023 14:59 Sitarcik   
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -289,7 +289,7 @@ E_lab = 306.617 MeV    E* =  27.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 25/02/2023 10:42 Sitarcik   
+   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 05/04/2023 14:59 Sitarcik   
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -425,7 +425,7 @@ E_lab = 306.617 MeV    E* =  27.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 25/02/2023 10:42 Sitarcik   
+   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 05/04/2023 14:59 Sitarcik   
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt
@@ -561,7 +561,7 @@ E_lab = 306.617 MeV    E* =  27.000 MeV   nicht gerechnet, SIGFUS kleiner als 1 
 
  HIVAP  CASOUT
 
-   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 25/02/2023 10:42 Sitarcik   
+   93Nb 65Cu 158Yb IFUS10 barfac1.0 sigr3.0 05/04/2023 14:59 Sitarcik   
 
 
      E_lab  A*MeV   E*/MeV     SI_fus      SI_VR     SI_Spalt  L_krit     b_Spalt

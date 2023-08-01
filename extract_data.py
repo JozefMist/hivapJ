@@ -103,14 +103,14 @@ for input_file in sys.argv[1:]:
 
     temp_array_name.pop()
 
-    output_array = [output_name_xn, output_name_pxn, output_name_2pxn, output_name_3pxn]
+    output_array = [output_name, output_name_xn, output_name_pxn, output_name_2pxn, output_name_3pxn]
     
     temp_elab = open(temp_elab_name, 'r')
     elab_lines = temp_elab.readlines()
 
     for item_no in range(len(temp_array_name)):
         f = open(temp_array_name[item_no], 'r')
-        file = open(path_data + output_array[item_no], 'w')
+        file = open(path_data + output_array[item_no+1], 'w')
         lines = f.readlines()
         if len(elab_lines) == len(lines):
             for i in range(len(elab_lines)):
