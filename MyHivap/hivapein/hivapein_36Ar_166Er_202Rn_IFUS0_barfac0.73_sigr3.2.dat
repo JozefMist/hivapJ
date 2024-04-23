@@ -1,4 +1,4 @@
-   36Ar 166Er 202Rn IFUS0 barfac0.73 sigr3.2 12/07/2023 10:55 Sitarcik
+   36Ar 166Er 202Rn IFUS0 barfac0.73 sigr3.2 12/04/2024 16:35 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=36  ZPROJ=18  MTARG=166  ZTARG=68                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
@@ -6,7 +6,7 @@
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 
-  NEUTRONS=10 PROTONS=4
+  NEUTRONS=13 PROTONS=2
   MASSES LOG UNIT=9  NUMB=0  IOVER=1  INERT=0  INERF=0 FINERT=1   
   LIMITS=1  PRINT=5  LOGUN=0  ICOR=0  ISOMERS=0 LEVDENS=1        
   IRAST=0  WKB=1  ITRANS=0  JFJI =1                                

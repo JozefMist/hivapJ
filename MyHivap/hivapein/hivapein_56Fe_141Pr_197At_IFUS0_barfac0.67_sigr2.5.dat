@@ -1,4 +1,4 @@
-   56Fe 141Pr 197At IFUS0 barfac0.67 sigr2.5 10/10/2022 14:07 Sitarcik
+   56Fe 141Pr 197At IFUS0 barfac0.67 sigr2.5 12/04/2024 12:44 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=56  ZPROJ=26  MTARG=141  ZTARG=59                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
@@ -6,7 +6,7 @@
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 
-  NEUTRONS=8 PROTONS=3
+  NEUTRONS=13 PROTONS=2
   MASSES LOG UNIT=9  NUMB=0  IOVER=1  INERT=0  INERF=0 FINERT=1   
   LIMITS=1  PRINT=5  LOGUN=0  ICOR=0  ISOMERS=0 LEVDENS=1        
   IRAST=0  WKB=1  ITRANS=0  JFJI =1                                

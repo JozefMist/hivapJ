@@ -3,5 +3,5 @@
 *.png
 !Moller_1995_deformations_and_masses.pdf
 !hivap_manual.pdf
-MyHivap/results/*/data/*.dat
+MyHivap/results/*
 MyHivap/data_hivap/*.dat
