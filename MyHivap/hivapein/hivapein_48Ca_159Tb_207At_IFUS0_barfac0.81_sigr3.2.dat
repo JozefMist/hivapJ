@@ -1,12 +1,12 @@
-   48Ca 159Tb 207At IFUS0 barfac0.81 sigr3.2 12/04/2024 16:25 Sitarcik
+   48Ca 159Tb 207At IFUS0 barfac0.81 sigr3.2 27/04/2024 08:56 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=48  ZPROJ=20  MTARG=159  ZTARG=65                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
-  IBF=1  FISROT PARAMETERS=2                                          
+  IBF=1  FISROT PARAMETERS=0                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 
-  NEUTRONS=13 PROTONS=2
+  NEUTRONS=12 PROTONS=2
   MASSES LOG UNIT=9  NUMB=0  IOVER=1  INERT=0  INERF=0 FINERT=1   
   LIMITS=1  PRINT=5  LOGUN=0  ICOR=0  ISOMERS=0 LEVDENS=1        
   IRAST=0  WKB=1  ITRANS=0  JFJI =1                                

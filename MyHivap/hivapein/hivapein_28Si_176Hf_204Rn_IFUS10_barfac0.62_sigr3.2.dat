@@ -1,12 +1,12 @@
-   28Si 176Hf 204Rn IFUS10 barfac0.62 sigr3.2 12/07/2023 11:12 Sitarcik
+   28Si 176Hf 204Rn IFUS10 barfac0.62 sigr3.2 26/04/2024 15:10 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=28  ZPROJ=14  MTARG=176  ZTARG=72                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
-  IBF=1  FISROT PARAMETERS=2                                          
+  IBF=1  FISROT PARAMETERS=0                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 
-  NEUTRONS=10 PROTONS=4
+  NEUTRONS=10 PROTONS=2
   MASSES LOG UNIT=9  NUMB=0  IOVER=1  INERT=0  INERF=0 FINERT=1   
   LIMITS=1  PRINT=5  LOGUN=0  ICOR=0  ISOMERS=0 LEVDENS=1        
   IRAST=0  WKB=1  ITRANS=0  JFJI =1                                
@@ -361,10 +361,7 @@ CUT=.1E-6 FRACT2=.1E-6 ABSMIN=0 PRCN=0 SIGLOW=0 DEL1=0 NOLEP=0 =0 =0
  V0=40 r0=1.09931 D=0.75 Q2=0.284   CRED=1.0 NOCURV=0 NOPROX=0 IOPT=0
  ITEST=0 sigr=3.2 
 -----------------------------------------------------------------------
- E=91   IEXC 1 IFUS=10 LIMBAR=1 JLOWER 0 JUPPER 0 0 0 0 ENERGY1=0    
- V0=40 r0=1.09931 D=0.75 Q2=0.284   CRED=1.0 NOCURV=0 NOPROX=0 IOPT=0
- ITEST=0 sigr=3.2 
------------------------------------------------------------------------
+
 
 
   -1   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  

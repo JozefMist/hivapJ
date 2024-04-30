@@ -27,16 +27,20 @@ To run a script which automatizes the HIVAP calculation, update values in values
  - sigr param. depends on the deformation and should describe the barrier fluctuations, usually ~2.5 for spherical targets and up to 3.5 for deformed ones. 
  - BARFAC value is taken as the command line parameter:
 	for example, to set BARFAC to 0.7, you run script_hivap.sh as follow:
+~~~
 	./scrip_hivap.sh 0.7
+~~~
 	
 	If you want to run HIVAP for several BARFAC values (in an interval), run
-
+~~~
 	for i in $(seq <lower_limit> <step> <upper_limit_included>); do ./script_hivap.sh $i; done
+~~~
 
 	This will run HIVAP script for all values between <lowe_limit> and <upper_limit_included> with a step of <step>.
 	IMPORTANT: In SK language, the decimal separator is comma (,), you have to change it to dot (.) with:
-
+~~~
 	export 'LC_NUMERIC="C"' 
+~~~
 
 Note: the scripts changing values and modes change those based on the position of affected line, 
 therefore adding/removing lines from the hivapein.dat file messes things up.

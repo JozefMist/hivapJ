@@ -205,7 +205,7 @@ class Reaction:
         evap_channel="xn",
         bf_diff=0.00,
         plot_diff=True,
-        channels_to_plot=[],
+        channels_to_plot=None,
         lowYRange=0,
         highYRange=0,
         lowXRange=0,
@@ -250,9 +250,7 @@ class Reaction:
         self.reaction_info_note = reaction_info_note
         self.save_note = save_note
 
-        if (
-            not channels_to_plot
-        ):  # and (self.data_ifus0['isotope'].unique() == self.data_ifus10['isotope'].unique()).all():
+        if channels_to_plot == None:
             self.channels_to_plot = self.data_ifus0["isotope"].unique()
         else:
             # add to self.channels_to_plot only those that are in the data
@@ -841,6 +839,7 @@ class Reaction:
             bbox_inches="tight",
         )
 
+
 # # Example how to plot an excitation function
 # Reaction(
 #     "44Ca",
@@ -853,4 +852,3 @@ class Reaction:
 #     unit="ub",
 #     evap_channel="xn",
 # ).plot()
-

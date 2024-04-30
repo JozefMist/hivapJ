@@ -1,8 +1,8 @@
-   45Sc 159Tb 204Rn IFUS10 barfac0.67 sigr3.2 16/04/2024 22:51 Sitarcik
+   45Sc 159Tb 204Rn IFUS10 barfac0.67 sigr3.2 26/04/2024 15:16 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=45  ZPROJ=21  MTARG=159  ZTARG=65                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
-  IBF=1  FISROT PARAMETERS=2                                          
+  IBF=1  FISROT PARAMETERS=0                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 

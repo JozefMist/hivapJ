@@ -1,12 +1,12 @@
-   22Ne 190Os 212Rn IFUS0 barfac0.73 sigr3.0 08/04/2024 13:48 Sitarcik
+   22Ne 190Os 212Rn IFUS0 barfac0.73 sigr3.0 28/04/2024 14:46 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=22  ZPROJ=10  MTARG=190  ZTARG=76                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
-  IBF=1  FISROT PARAMETERS=2                                          
+  IBF=1  FISROT PARAMETERS=0                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 
-  NEUTRONS=13 PROTONS=3
+  NEUTRONS=14 PROTONS=2
   MASSES LOG UNIT=9  NUMB=0  IOVER=1  INERT=0  INERF=0 FINERT=1   
   LIMITS=1  PRINT=5  LOGUN=0  ICOR=0  ISOMERS=0 LEVDENS=1        
   IRAST=0  WKB=1  ITRANS=0  JFJI =1                                

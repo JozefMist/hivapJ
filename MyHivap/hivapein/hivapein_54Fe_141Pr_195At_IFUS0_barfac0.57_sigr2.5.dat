@@ -1,8 +1,8 @@
-   54Fe 141Pr 195At IFUS0 barfac0.57 sigr2.5 15/04/2024 22:23 Sitarcik
+   54Fe 141Pr 195At IFUS0 barfac0.57 sigr2.5 26/04/2024 16:07 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=54  ZPROJ=26  MTARG=141  ZTARG=59                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
-  IBF=1  FISROT PARAMETERS=2                                          
+  IBF=1  FISROT PARAMETERS=0                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 

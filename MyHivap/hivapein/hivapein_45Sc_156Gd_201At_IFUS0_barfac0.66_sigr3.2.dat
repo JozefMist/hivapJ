@@ -1,12 +1,12 @@
-   45Sc 156Gd 201At IFUS0 barfac0.66 sigr3.2 06/10/2022 09:43 Sitarcik
+   45Sc 156Gd 201At IFUS0 barfac0.66 sigr3.2 26/04/2024 22:09 Sitarcik
 ----------------------------------------------------------------------- 
   MPROJ=45  ZPROJ=21  MTARG=156  ZTARG=64                         
   ISHELL(GS)=2  ISHELL(SADDLE)=2  PAIRING=4  MC=0  MP=0            
-  IBF=1  FISROT PARAMETERS=2                                          
+  IBF=1  FISROT PARAMETERS=0                                          
   NOFISSION=0  NONEUTRONS=0  NOPROTONS=0  NOALPHAS=0 NO GAMMAS=0   
   DISC=0  GAMMA PARAMETERS(IGAM)=1                                     
 ----------------------------------------------------------------------- 
-  NEUTRONS=7 PROTONS=3
+  NEUTRONS=10 PROTONS=2
   MASSES LOG UNIT=9  NUMB=0  IOVER=1  INERT=0  INERF=0 FINERT=1   
   LIMITS=1  PRINT=5  LOGUN=0  ICOR=0  ISOMERS=0 LEVDENS=1        
   IRAST=0  WKB=1  ITRANS=0  JFJI =1                                
