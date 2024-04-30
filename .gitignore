@@ -4,4 +4,7 @@
 !Moller_1995_deformations_and_masses.pdf
 !hivap_manual.pdf
 MyHivap/results/*
+MyHivap/results_sierk/*
 MyHivap/data_hivap/*.dat
+MyHivap/hivapein/*.dat
+MyHivap/hivaperg/*.dat
