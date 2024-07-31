@@ -29,7 +29,7 @@ class Reaction:
         evap_channel="xn",
         bf_diff=0.00,
         plot_diff=True,
-        channels_to_plot=None,
+        channels_to_plot=[],
         lowYRange=0,
         highYRange=0,
         lowXRange=0,
@@ -74,7 +74,7 @@ class Reaction:
         self.reaction_info_note = reaction_info_note
         self.save_note = save_note
 
-        if channels_to_plot == None:
+        if len(channels_to_plot) == 0:
             self.channels_to_plot = self.data_ifus0["isotope"].unique()
         else:
             # add to self.channels_to_plot only those that are in the data
