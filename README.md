@@ -18,7 +18,9 @@ Input file is hivapein.dat - hivapein_IFUS0.dat and hivapein_IFUS10.dat are for 
 
 Output file is hivaperg.dat, ALL OUTPUT CS values are in milibarns [mb].<br>
 
-Two fission-barrier approaches can be used, by changing the FISROT value in hivapein.dat (or hivapein_IFUS*.dat to be used in the automatization script) - the Cohen-Plasil-Swiatecki approach (FISROT=0) [Cohen et al., Ann. Phys. 82, 1974] or the Sierk approach (FISROT=2) [Sierk, PRC 33, 1986]. 
+Two fission-barrier approaches can be used, by changing the FISROT value in hivapein.dat (or hivapein_IFUS\*.dat to be used in the automatization script) - the Cohen-Plasil-Swiatecki approach (FISROT=0) [Cohen et al., Ann. Phys. 82, 1974] or the Sierk approach (FISROT=2) [Sierk, PRC 33, 1986]. 
+
+The nuclear masses are in mlz.dat file, in the form of mass excess. 
 
 ## HIVAP automatization:
 
