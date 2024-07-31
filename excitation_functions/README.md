@@ -1,7 +1,12 @@
 # Excitation function plotting script
 ## Script for plotting the excitation functions from HIVAP and corresponding experimental data
 
-### Create a reaction object:
+To plot the excitation functions, run file plot_excitation_functions.py with python (you may have to install required packages - numpy, pandas, etc.):
+~~~
+python3 plot_excitation_functions.py
+~~~
+
+### Create a reaction object in reactions_list.py file (or append to existing array of Reactions):
 ~~~
 Reaction(
         projectile,
@@ -13,27 +18,43 @@ Reaction(
         evap_channel="xn",
         bf_diff=0.00,
         plot_diff=True,
-        channels_to_plot=[],
+        channels_to_plot=None,
         lowYRange=0,
         highYRange=0,
         lowXRange=0,
         highXRange=0,
         exp_data: ExpData = None,
-        plot_exp_data=True
+        plot_exp_data=True,
+        plot_maxCS_data=False,
+        show_bass_barrier=False,
+        reaction_info_note="",
+        save_note=""
 )
 ~~~
 
 unit - change units in which data are plotted: 'mb' (default), 'ub' or 'nb'
 
-evap_channel - change which evap. channels are displayed: 'xn' (defaul), 'pxn' or '2pxn'
+evap_channel - change which evap. channels are displayed: 'xn' (default), 'pxn' or '2pxn'
 
 bf_diff - specify a BARFAC "uncertainty", which will be displayed as a shaded area around the main value: 0.0 (default)
 
-plot_diff - turn off the BARFAC difference plotting: True default
+plot_diff - turn off the BARFAC difference plotting: default True
 
 channels_to_plot - specify which channels are to be plotted
 
 low[axis]Range/high[axis]Range - change the range of [axis] manually
+
+exp_data - explained in detail below
+
+plot_exp_data - specify if to plot experimental data: default True
+
+plot_maxCS_data - if only max CS values are available without specified beam energy, a horizontal line is plotted: default False
+
+show_bass_barrier - plots an arrow at the Bass barrier lab frame energy: default False
+
+reaction_info_note - adds title with custom note to the plot, if not empty
+
+save_note - appends note to the end of the resulting plot file name, if not empty
 
 ### Experimental data
 
