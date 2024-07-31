@@ -3,6 +3,7 @@
 *.png
 !excitation_functions/*
 !Moller_1995_deformations_and_masses.pdf
+!Moller2016 Nuclear ground-state masses and deformations.pdf
 !hivap_manual.pdf
 MyHivap/results/*
 MyHivap/results_sierk/*
