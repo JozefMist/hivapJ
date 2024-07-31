@@ -27,11 +27,11 @@ for input_file in sys.argv[1:]:
     for line in lines_in_file:
         line_array.append(line.split())  
     
-    output_name = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_allCh_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
-    output_name_xn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_xn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
-    output_name_pxn =  line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
-    output_name_2pxn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_2pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
-    output_name_3pxn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_3pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '.dat'
+    output_name = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_allCh_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '_' + line_array[4][6] + '_' + line_array[4][7] + '.dat'
+    output_name_xn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_xn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '_' + line_array[4][6] + '_' + line_array[4][7] + '.dat'
+    output_name_pxn =  line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '_' + line_array[4][6] + '_' + line_array[4][7] + '.dat'
+    output_name_2pxn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_2pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '_' + line_array[4][6] + '_' + line_array[4][7] + '.dat'
+    output_name_3pxn = line_array[4][0] + '_' + line_array[4][1] + '_' + line_array[4][2] + '_3pxn_' + line_array[4][3] + '_' + line_array[4][4] + '_' + line_array[4][5] + '_' + line_array[4][6] + '_' + line_array[4][7] + '.dat'
 
 
     temp_xn_name = 'temp_xn.dat'

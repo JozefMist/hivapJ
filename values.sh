@@ -74,12 +74,16 @@ echo sigr=$sigr
 #Header update
 today=$(date +"%d/%m/%Y")
 now=$(date +"%H:%M")
-sed -i "s|${word_line1[6]}|$today|" hivapein_IFUS10.dat
-sed -i "s|${word_line1[6]}|$today|" hivapein_IFUS0.dat
-sed -i "s|${word_line1[7]}|$now|" hivapein_IFUS10.dat
-sed -i "s|${word_line1[7]}|$now|" hivapein_IFUS0.dat
-sed -i "s|${word_line1[4]}|barfac$barfac|" hivapein_IFUS10.dat
-sed -i "s|${word_line1[4]}|barfac$barfac|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[8]}|$today|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[8]}|$today|" hivapein_IFUS0.dat
+#sed -i "s|${word_line1[7]}|$now|" hivapein_IFUS10.dat
+#sed -i "s|${word_line1[7]}|$now|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[7]}|R$r0|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[7]}|R$r0|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[6]}|V0$v0|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[6]}|V0$v0|" hivapein_IFUS0.dat
+sed -i "s|${word_line1[4]}|BF$barfac|" hivapein_IFUS10.dat
+sed -i "s|${word_line1[4]}|BF$barfac|" hivapein_IFUS0.dat
 sed -i "s|${word_line1[5]}|sigr$sigr|" hivapein_IFUS10.dat
 sed -i "s|${word_line1[5]}|sigr$sigr|" hivapein_IFUS0.dat
 
