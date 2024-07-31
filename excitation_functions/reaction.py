@@ -1,3 +1,4 @@
+import os
 import warnings
 import numpy as np
 import pandas as pd
@@ -640,6 +641,9 @@ class Reaction:
             raise ValueError(
                 "Invalid extension type, please choose one from: %s" % extension_types
             )
+        
+        if not os.path.exists('./figs'):
+            os.makedirs('./figs')
 
         plt.savefig(
             "figs/"
