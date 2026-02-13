@@ -9,6 +9,7 @@ from math import log10, floor, ceil
 from exp_data import ExpData
 from util import splitIsotope
 from util import periodicTable
+from mass_table import getMassTable
 
 from config import colors, markers, PATH_TO_HIVAPS
 
@@ -26,7 +27,13 @@ class Reaction:
         cn,
         barfac,
         sigr,
+        V0,
+        R0,
+        energy_values="beam", #"beam" or "exc" for excitation energy
         unit="mb",
+        m_proj=1,
+        m_targ=1,
+        m_cn=1,
         evap_channel="xn",
         bf_diff=0.00,
         plot_diff=True,
@@ -37,6 +44,7 @@ class Reaction:
         highXRange=0,
         exp_data: ExpData = None,
         plot_exp_data=True,
+        convert_exp_data=False,
         plot_maxCS_data=False,
         show_bass_barrier=False,
         reaction_info_note="",
@@ -51,6 +59,9 @@ class Reaction:
         self.unit = unit
         self.evap_channel = evap_channel
         self.sigr = sigr
+        self.V0 = V0
+        self.R0 = R0
+        self.energy_values = energy_values
         self.bf_diff = bf_diff
         self.plot_diff = plot_diff
         self.data_ifus0, self.data_ifus10 = None, None
@@ -65,6 +76,7 @@ class Reaction:
         self.highYRange = highYRange
         self.lowXRange = lowXRange
         self.highXRange = highXRange
+        self.convert_exp_data = convert_exp_data
         if exp_data:
             self.exp_data = exp_data
             self.__processExpData()
@@ -120,6 +132,16 @@ class Reaction:
         else:
             raise ValueError("IFUS0 and IFUS10 do not contain the same isotopes")
 
+    def __loadMasses(self):
+        mass_dict = getMassTable()
+
+        try:
+            self.m_proj = mass_dict[self.projectile]
+            self.m_targ = mass_dict[self.target]
+            self.m_cn = mass_dict[self.cn]
+        except KeyError as e:
+           raise ValueError(f"Mass for isotope {e} not found in masses.dat")
+
     def __getData(self):
         # get data into variable
         try:
@@ -137,10 +159,14 @@ class Reaction:
                 + self.evap_channel
                 + "_"
                 + "IFUS0"
-                + "_barfac"
+                + "_BF"
                 + f"{self.barfac:.2f}"
                 + "_sigr"
                 + str(self.sigr)
+                + "_V0"
+                + str(self.V0)
+                + "_R"
+                + str(self.R0)
                 + ".dat",
                 sep="\t",
             )
@@ -159,10 +185,14 @@ class Reaction:
                 + self.evap_channel
                 + "_"
                 + "IFUS10"
-                + "_barfac"
+                + "_BF"
                 + f"{self.barfac:.2f}"
                 + "_sigr"
                 + str(self.sigr)
+                + "_V0"
+                + str(self.V0)
+                + "_R"
+                + str(self.R0)
                 + ".dat",
                 sep="\t",
             )
@@ -200,10 +230,14 @@ class Reaction:
                 + self.evap_channel
                 + "_"
                 + "IFUS0"
-                + "_barfac"
+                + "_BF"
                 + f"{self.barfac-self.bf_diff:.2f}"
                 + "_sigr"
                 + str(self.sigr)
+                + "_V0"
+                + str(self.V0)
+                + "_R"
+                + str(self.R0)
                 + ".dat",
                 sep="\t",
             )
@@ -222,10 +256,14 @@ class Reaction:
                 + self.evap_channel
                 + "_"
                 + "IFUS0"
-                + "_barfac"
+                + "_BF"
                 + f"{self.barfac+self.bf_diff:.2f}"
                 + "_sigr"
                 + str(self.sigr)
+                + "_V0"
+                + str(self.V0)
+                + "_R"
+                + str(self.R0)
                 + ".dat",
                 sep="\t",
             )
@@ -244,10 +282,14 @@ class Reaction:
                 + self.evap_channel
                 + "_"
                 + "IFUS10"
-                + "_barfac"
+                + "_BF"
                 + f"{self.barfac-self.bf_diff:.2f}"
                 + "_sigr"
                 + str(self.sigr)
+                + "_V0"
+                + str(self.V0)
+                + "_R"
+                + str(self.R0)
                 + ".dat",
                 sep="\t",
             )
@@ -266,10 +308,14 @@ class Reaction:
                 + self.evap_channel
                 + "_"
                 + "IFUS10"
-                + "_barfac"
+                + "_BF"
                 + f"{self.barfac+self.bf_diff:.2f}"
                 + "_sigr"
                 + str(self.sigr)
+                + "_V0"
+                + str(self.V0)
+                + "_R"
+                + str(self.R0)
                 + ".dat",
                 sep="\t",
             )
@@ -316,6 +362,43 @@ class Reaction:
             scale = 1e9
 
         dataframe["CS"] = dataframe["CS"].multiply(scale)
+
+    def getEnergyColumn(self):
+        if self.energy_values == "beam":
+            return "E_lab"
+        elif self.energy_values == "exc":
+            return "E*/MeV"
+        else:
+            raise ValueError("energy_values must be 'beam' or 'exc'")
+
+    def getMinEnergy(self, energy_mode="beam"):
+        if energy_mode == "beam":
+            if self.E_lab is None:
+                raise ValueError("E_lab not provided")
+            return min(self.E_lab)
+
+        elif energy_mode == "exc":
+            if self.E_exc is None:
+                raise ValueError("E_exc not provided")
+            return min(self.E_exc)
+
+        else:
+            raise ValueError("energy_mode must be 'beam' or 'exc'")
+
+    def getMaxEnergy(self, energy_mode="beam"):
+        if energy_mode == "beam":
+            if self.E_lab is None:
+                raise ValueError("E_lab not provided")
+            return max(self.E_lab)
+
+        elif energy_mode == "exc":
+            if self.E_exc is None:
+                raise ValueError("E_exc not provided")
+            return max(self.E_exc)
+
+        else:
+            raise ValueError("energy_mode must be 'beam' or 'exc'")
+
 
     def __lowYRange(self):
         # find maximum of the 'smallest' excit. function (IFUS10) to be plotted and then set the minimum to 1 order lower, or min of exp data if it is lower
@@ -374,15 +457,15 @@ class Reaction:
                 self.roundMinXRange(
                     self.data_ifus10[
                         self.data_ifus10["isotope"].isin(self.channels_to_plot)
-                    ][self.data_ifus10["CS"] > self.lowYRange]["E_lab"].min()
+                    ][self.data_ifus10["CS"] > self.lowYRange][self.getEnergyColumn()].min()
                 ),
-                self.exp_data.getMinE_lab() - 5,
+                self.exp_data.getMinEnergy(self.energy_values) - 5
             )
         except:
             return self.roundMinXRange(
                 self.data_ifus10[
                     self.data_ifus10["isotope"].isin(self.channels_to_plot)
-                ][self.data_ifus10["CS"] > self.lowYRange]["E_lab"].min()
+                ][self.data_ifus10["CS"] > self.lowYRange][self.getEnergyColumn()].min()
             )
 
     def __highXRange(self):
@@ -392,15 +475,15 @@ class Reaction:
                 self.roundMaxXRange(
                     self.data_ifus10[
                         self.data_ifus10["isotope"].isin(self.channels_to_plot)
-                    ][self.data_ifus10["CS"] > self.lowYRange]["E_lab"].max()
+                    ][self.data_ifus10["CS"] > self.lowYRange][self.getEnergyColumn()].max()
                 ),
-                self.exp_data.getMaxE_lab() + 5,
+               self.exp_data.getMaxEnergy(self.energy_values) + 5
             )
         except:
             return self.roundMaxXRange(
                 self.data_ifus10[
                     self.data_ifus10["isotope"].isin(self.channels_to_plot)
-                ][self.data_ifus10["CS"] > self.lowYRange]["E_lab"].max()
+                ][self.data_ifus10["CS"] > self.lowYRange][self.getEnergyColumn()].max()
             )
 
     def roundMinXRange(self, value):
@@ -408,6 +491,16 @@ class Reaction:
 
     def roundMaxXRange(self, value):
         return ceil(value / 10) * 10
+
+    def getBassBarrier(self):
+        if self.energy_values == "beam":
+            return self.getBassBarrierLab()
+
+        elif self.energy_values == "exc":
+            return self.getBassBarrierExc()
+
+        else:
+            raise ValueError("energy_values must be 'beam' or 'exc'")
 
     def getBassBarrierLab(self):
         A_p = self.isotopeA(self.projectile)
@@ -423,6 +516,21 @@ class Reaction:
         )
 
         return Bass_cm * (A_p + A_t) / A_t
+
+    def getBassBarrierExc(self):
+        if not hasattr(self, "m_proj"):
+            self.__loadMasses()
+
+        B_lab = self.getBassBarrierLab()
+
+        A_p = self.isotopeA(self.projectile)
+        A_t = self.isotopeA(self.target)
+
+        E_cm = B_lab * A_t / (A_p + A_t)
+
+        Q = (self.m_proj + self.m_targ - self.m_cn) * 931.494
+
+        return E_cm + Q
 
     def plot(
         self,
@@ -441,24 +549,28 @@ class Reaction:
         fig, ax = plt.subplots(figsize=(12, 5.5))
 
         sns.lineplot(
-            x="E_lab",
+            x=self.getEnergyColumn(),
             y="CS",
             hue="isotope",
+            hue_order=self.channels_to_plot,
             data=self.data_ifus10[
                 self.data_ifus10["isotope"].isin(self.channels_to_plot)
             ],
-            palette=colors,
+            #palette=colors,
+            palette=colors[:len(self.channels_to_plot)],
         )
         sns.lineplot(
-            x="E_lab",
+            x=self.getEnergyColumn(),
             y="CS",
             hue="isotope",
+            hue_order=self.channels_to_plot,
             data=self.data_ifus0[
                 self.data_ifus0["isotope"].isin(self.channels_to_plot)
             ],
             legend=None,
             linestyle="--",
-            palette=colors,
+            #palette=colors,
+            palette=colors[:len(self.channels_to_plot)],
         )
         for text in plt.legend(
             loc="upper right",
@@ -480,11 +592,15 @@ class Reaction:
         plt.ylim(self.lowYRange, self.highYRange)
         plt.xlim(self.lowXRange, self.highXRange)
         if self.unit == "ub":
-            plt.ylabel("$\sigma$ [$\mu$b]", fontsize=20)
+            plt.ylabel(r"$\sigma$ [$\mu$b]", fontsize=20)
         else:
-            plt.ylabel(f"$\sigma$ [{self.unit}]", fontsize=20)
+            plt.ylabel(rf"$\sigma$ [{self.unit}]", fontsize=20)
 
-        plt.xlabel("$E_{proj}$ [MeV]", fontsize=20)
+        #plt.xlabel("$E_{proj}$ [MeV]", fontsize=20)
+        if self.energy_values == "beam":
+            plt.xlabel(r"$E_{beam}$ [MeV]")
+        else:
+            plt.xlabel(r"$E^*$ [MeV]")
 
         if show_reaction_info:
             plt.text(
@@ -519,26 +635,26 @@ class Reaction:
         if plot_exp_data and self.plot_exp_data:
             self.__plotExpData()
 
-        if (
-            show_bass_barrier or self.show_bass_barrier
-        ) and self.getBassBarrierLab() > (
-            self.lowXRange + 5 / 100 * (self.highXRange - self.lowXRange)
-        ):
-            plt.annotate(
-                r"$B_{Bass}$",
-                xy=(self.getBassBarrierLab(), self.lowYRange),
-                xytext=(
-                    self.getBassBarrierLab(),
-                    10
-                    ** (
-                        log10(self.lowYRange)
-                        + 0.15 * (log10(self.highYRange) - log10(self.lowYRange))
+        if show_bass_barrier or self.show_bass_barrier:
+            try:
+                barrier = self.getBassBarrier()
+            except Exception as e:
+                print("Bass barrier not plotted:", e)
+                return            
+            
+            if barrier > (self.lowXRange + 5 / 100 * (self.highXRange - self.lowXRange)):
+                plt.annotate(
+                    r"$B_{Bass}$",
+                    xy=(barrier, self.lowYRange),
+                    xytext=(
+                        barrier,
+                        10 ** (log10(self.lowYRange) + 0.15 * (log10(self.highYRange) - log10(self.lowYRange))
+                        ),
                     ),
-                ),
-                ha="center",
-                fontsize=20,
-                arrowprops=dict(arrowstyle="->", color="black", linewidth=2),
-            )
+                    ha="center",
+                    fontsize=20,
+                    arrowprops=dict(arrowstyle="->", color="black", linewidth=2),
+                )   
 
         if display_plot:
             plt.show()
@@ -591,7 +707,8 @@ class Reaction:
 
     def __processExpData(self):
         self.__checkIsotopesInData()
-        self.exp_data.scaleExpData(self.unit)
+        if self.convert_exp_data:
+            self.exp_data.scaleExpData(self.unit)
 
     def __checkIsotopesInData(self):
         exp_data_isotopes = set(self.exp_data.cs_data.keys())
@@ -614,7 +731,7 @@ class Reaction:
                         linewidth=3,
                     )
                 else:
-                    for exp_data in self.exp_data.getEvapChannelExpData(isotope):
+                    for exp_data in self.exp_data.getEvapChannelExpData(isotope, energy_mode=self.energy_values):
                         (_, caps, _) = plt.errorbar(
                             exp_data[0],
                             exp_data[1],
