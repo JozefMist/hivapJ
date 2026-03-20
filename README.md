@@ -21,6 +21,15 @@ Output file is hivaperg.dat, ALL OUTPUT CS values are in milibarns [mb].<br>
 Two fission-barrier approaches can be used, by changing the FISROT value in hivapein.dat (or hivapein_IFUS\*.dat to be used in the automatization script) - the Cohen-Plasil-Swiatecki approach (FISROT=0) [Cohen et al., Ann. Phys. 82, 1974] or the Sierk approach (FISROT=2) [Sierk, PRC 33, 1986]. 
 
 The nuclear masses are in mlz.dat file, in the form of mass excess. 
+HIVAP requires strict formatting of the file for each element:
+line 1: Z A_min A_max - each 4 characters long including spaces
+line 2: m1 m2 ... m10 - each 8 characters long, including spaces, decimal point and minus sign, at most 3 decimal places, 10 values per line. 
+line 3: m11 ... m20
+line 4: m21 ... m27 - last line can contain less than 10 values
+line 5: Z+1 A_min A_max - new element
+.
+.
+.
 
 ## HIVAP automatization:
 
