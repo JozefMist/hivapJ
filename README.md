@@ -20,12 +20,18 @@ Output file is hivaperg.dat, ALL OUTPUT CS values are in milibarns [mb].<br>
 
 Two fission-barrier approaches can be used, by changing the FISROT value in hivapein.dat (or hivapein_IFUS\*.dat to be used in the automatization script) - the Cohen-Plasil-Swiatecki approach (FISROT=0) [Cohen et al., Ann. Phys. 82, 1974] or the Sierk approach (FISROT=2) [Sierk, PRC 33, 1986]. 
 
-The nuclear masses are in mlz.dat file, in the form of mass excess. 
+The nuclear masses are in the mlz.dat file, in the form of mass excess.
+
 HIVAP requires strict formatting of the file for each element:
+
 line 1: Z A_min A_max - each 4 characters long including spaces
-line 2: m1 m2 ... m10 - each 8 characters long, including spaces, decimal point and minus sign, at most 3 decimal places, 10 values per line. 
+
+line 2: m1 m2 ... m10 - each 8 characters long, including spaces, decimal point, and minus sign, at most 3 decimal places, 10 values per line. 
+
 line 3: m11 ... m20
-line 4: m21 ... m27 - last line can contain less than 10 values
+
+line 4: m21 ... m27 - last line can contain fewer than 10 values
+
 line 5: Z+1 A_min A_max - new element
 .
 .
@@ -34,19 +40,19 @@ line 5: Z+1 A_min A_max - new element
 ## HIVAP automatization:
 
 ### Script parts
-The script to automatize HIVAP consists of several subscripts:
+The script to automate HIVAP consists of several subscripts:
  - ifus_mode_0.sh - changes HIVAP mode to IFUS=0 - mode without sub-barrier fusion
  - ifus_mode_10.sh - changes HIVAP mode to IFUS=10 - sub-barrier fusion enabled
  - move_hivapein_hivaperg.sh - automatically moves output file (hivaperg.dat) to the MyHivap/hivaperg folder
-    and changes its name (and its header - time, date and the reaction) according to the reaction, BARFAC value and IFUS mode used
+    and changes its name (and its header - time, date, and the reaction) according to the reaction, BARFAC value, and IFUS mode used
  - script_hivap.sh - main script which runs all subscripts
  - values.sh - script to change initial values
- - extract_data.py - script extract data for each evap channel and saves it into MyHivap/data_hivap in easily usable form - groups together each evap channel and adds beam energy
+ - extract_data.py - script extracts data for each evap channel and saves it into MyHivap/data_hivap in easily usable form - groups together each evap channel and adds beam energy
 
 ### Running the script
 To run a script which automatizes the HIVAP calculation, update values in values.sh:
- - Z and A of projectile, target and CN are needed as well as the "name" of isotope (to update the name of output file). (I'll add automatic Z and A deduction from the isotope name later)
- - r0 parameter is calculated automatically by r0_calc.py script. 
+ - Z and A of projectile, target, and CN are needed, as well as the "name" of the isotope (to update the name of the output file). (I'll add automatic Z and A deduction from the isotope name later)
+ - r0 parameter is calculated automatically by the r0_calc.py script. 
  - v0 parameter - could be 40 (recommended in manual), 59, also seen other values, who knows what is correct
  - q2 deformation parameter (of the target nucleus) is from the Moller_1995_deformations_and_masses.pdf article (beta_2 parameter therein). 
  - sigr param. depends on the deformation and describes the barrier fluctuations, while influencing CS values below/near the barrier:
@@ -63,7 +69,7 @@ To run a script which automatizes the HIVAP calculation, update values in values
     for i in $(seq <lower_limit> <step> <upper_limit_included>); do ./script_hivap.sh $i; done
     ~~~
     
-    This will run HIVAP script for all values between <lowe_limit> and <upper_limit_included> with a step of <step>. 
+    This will run the HIVAP script for all values between <lower_limit> and <upper_limit_included> with a step of <step>. 
     <br>
     <em>Example:</em>
     ~~~
@@ -71,13 +77,13 @@ To run a script which automatizes the HIVAP calculation, update values in values
     ~~~
     This command runs HIVAP for BARFAC values from 0.7 to 0.8 (included), with a step of 0.01.
     
-    In SK language, the decimal separator is comma (,), you have to change it to dot (.) with:
+    In SK language, the decimal separator is a comma (,), you have to change it to a dot (.) with:
     ~~~
     export 'LC_NUMERIC="C"' 
     ~~~
 
 <br>
 
-<em>Note:</em> the scripts changing values and modes change those based on the position of affected line, 
+<em>Note:</em> the scripts changing values and modes change those based on the position of the affected line, 
 therefore adding/removing lines from the hivapein.dat file messes things up.
 
