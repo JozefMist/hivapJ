@@ -60,7 +60,7 @@ reactions = [
                  })
 ),
 
-    Reaction('54Cr', '208Pb', '262Sg', barfac=0.01, sigr=3.0, bf_diff=0.0, V0=40, R0=1.12027, channels_to_plot=['261Sg','260Sg','259Sg'], unit='nb', convert_exp_data=False, energy_values="exc", save_note="Pb+PbS_newQ",
+    Reaction('54Cr', '208Pb', '262Sg', barfac=0.01, sigr=2.5, bf_diff=0.0, V0=40, R0=1.12027, channels_to_plot=['261Sg','260Sg','259Sg'], unit='nb', convert_exp_data=False, energy_values="exc", save_note="Pb+PbS_new_mass",
     exp_data=ExpData(E_exc=[11.002,	12.639,	14.276,	15.913,	17.507,	20.975,	24.011,	29.004,	31.33, 13.081, 14.392, 14.72, 15.684, 16.398, 21.384, 23.537, 24.526], 
                      E_lab=[249.421,	251.482,	253.544,	255.605,	257.613,	261.98,	265.804,	272.092,	275.021, 252.039, 253.691, 254.102, 255.318, 256.217, 262.495, 265.206, 266.452], 
                  cs_data=

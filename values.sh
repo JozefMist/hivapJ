@@ -13,7 +13,7 @@ ztarg=82
 barfac=$1
 r0=`python3 r0_calc.py $mproj $zproj $mtarg $ztarg`
 q2=0.0
-sigr=3.0
+sigr=2.5
 v0=40
 
 line1=$(sed '1q;d' hivapein_IFUS10.dat)
