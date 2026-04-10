@@ -25,6 +25,7 @@ Reaction(
         bf_diff=0.00,
         plot_diff=True,
         channels_to_plot=None,
+        plot_fusion=False,
         lowYRange=0,
         highYRange=0,
         lowXRange=0,
@@ -56,6 +57,8 @@ bf_diff - specify a BARFAC "uncertainty", which will be displayed as a shaded ar
 plot_diff - turn off the BARFAC difference plotting: default True
 
 channels_to_plot - specify which channels are to be plotted
+
+plot_fusion - enable plotting of the fusion cross-section
 
 low[axis]Range/high[axis]Range - change the range of [axis] manually
 
