@@ -38,6 +38,7 @@ class Reaction:
         bf_diff=0.00,
         plot_diff=True,
         channels_to_plot=[],
+        plot_fusion=False,
         lowYRange=0,
         highYRange=0,
         lowXRange=0,
@@ -72,6 +73,9 @@ class Reaction:
             self.data_ifus10_bf_high,
         ) = (None, None, None, None)
         self.channels_to_plot = channels_to_plot
+        self.plot_fusion = plot_fusion
+        self.data_fusion_IFUS10 = None
+        self.data_fusion_IFUS0 = None
         self.lowYRange = lowYRange
         self.highYRange = highYRange
         self.lowXRange = lowXRange
@@ -81,6 +85,8 @@ class Reaction:
             self.exp_data = exp_data
             self.__processExpData()
         self.__getData()
+        if self.plot_fusion:
+            self.__getFusionData()
         self.plot_exp_data = plot_exp_data
         self.plot_maxCS_data = plot_maxCS_data
         self.show_bass_barrier = show_bass_barrier
@@ -350,6 +356,69 @@ class Reaction:
                 self.data_ifus10_bf_high,
             ) = (None, None, None, None)
 
+    def __getFusionData(self):
+        try:
+            self.data_fusion_IFUS10 = pd.read_csv(
+                PATH_TO_HIVAPS
+                + "/"
+                + self.cn.lower()
+                + "/data/fusion/"
+                + self.projectile
+                + "_"
+                + self.target
+                + "_"
+                + self.cn
+                + "_"
+                + "fusion"
+                + "_"
+                + "IFUS10"
+                + "_BF"
+                + f"{self.barfac:.2f}"
+                + "_sigr"
+                + str(self.sigr)
+                + "_V0"
+                + str(self.V0)
+                + "_R"
+                + str(self.R0)
+                + ".dat",
+                sep="\t",
+            )
+
+            self.data_fusion_IFUS0 = pd.read_csv(
+                PATH_TO_HIVAPS
+                + "/"
+                + self.cn.lower()
+                + "/data/fusion/"
+                + self.projectile
+                + "_"
+                + self.target
+                + "_"
+                + self.cn
+                + "_"
+                + "fusion"
+                + "_"
+                + "IFUS0"
+                + "_BF"
+                + f"{self.barfac:.2f}"
+                + "_sigr"
+                + str(self.sigr)
+                + "_V0"
+                + str(self.V0)
+                + "_R"
+                + str(self.R0)
+                + ".dat",
+                sep="\t",
+            )
+
+            self.__scaleFusionData(self.data_fusion_IFUS10)
+            self.__scaleFusionData(self.data_fusion_IFUS0)
+            
+
+        except FileNotFoundError:
+            print(f"No fusion data found for {self.projectile} + {self.target}")
+            self.data_fusion = None
+    
+
     def __scaleData(self, dataframe):
         scale = 1
         if self.unit == "mb":
@@ -362,6 +431,11 @@ class Reaction:
             scale = 1e9
 
         dataframe["CS"] = dataframe["CS"].multiply(scale)
+
+    def __scaleFusionData(self, dataframe):
+        dataframe.rename(columns={"SI_fus": "CS"}, inplace=True)
+        self.__scaleData(dataframe)
+        dataframe.rename(columns={"CS": "SI_fus"}, inplace=True)
 
     def getEnergyColumn(self):
         if self.energy_values == "beam":
@@ -434,6 +508,13 @@ class Reaction:
                 highest_max = self.data_ifus10[self.data_ifus10["isotope"] == channel][
                     "CS"
                 ].max()
+
+        if self.plot_fusion and self.data_fusion_IFUS10 is not None:
+            try:
+                if self.data_fusion_IFUS10["SI_fus"].max() > highest_max:
+                    highest_max = self.data_fusion_IFUS10["SI_fus"].max()
+            except:
+                pass
 
         try:
             return self.roundMaxYRange(
@@ -572,6 +653,35 @@ class Reaction:
             #palette=colors,
             palette=colors[:len(self.channels_to_plot)],
         )
+
+        if self.plot_fusion:
+            if self.data_fusion_IFUS10 is not None:
+                x = self.data_fusion_IFUS10[self.getEnergyColumn()]
+                y = self.data_fusion_IFUS10["SI_fus"]
+
+                plt.plot(
+                x,
+                y,
+                color="gray",
+                linestyle="-",
+                linewidth=2,
+                label="Fusion (IFUS10)",
+                )
+
+            if self.data_fusion_IFUS0 is not None:
+                x = self.data_fusion_IFUS0[self.getEnergyColumn()]
+                y = self.data_fusion_IFUS0["SI_fus"]
+
+                plt.plot(
+                x,
+                y,
+                color="gray",
+                linestyle="--",
+                linewidth=2,
+                label="Fusion (IFUS0)",
+                )                
+
+        
         for text in plt.legend(
             loc="upper right",
             framealpha=1,
@@ -584,9 +694,11 @@ class Reaction:
             fontsize=16,
         ).get_texts():
             label = text.get_text()
-            text.set_text(
-                "$^{" + str(self.isotopeA(label)) + "}$" + self.isotopeElement(label)
-            )
+            try:
+                text.set_text("$^{" + str(self.isotopeA(label)) + "}$" + self.isotopeElement(label))
+            except Exception:
+                pass    
+        
 
         plt.semilogy()
         plt.ylim(self.lowYRange, self.highYRange)

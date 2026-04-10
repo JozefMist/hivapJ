@@ -116,7 +116,7 @@ for input_file in sys.argv[1:]:
     exc_index = header.index('E*/MeV')
 
 
-    output_fusion.write("E_lab\tE_exc\tSI_fus\n")
+    output_fusion.write("E_lab\tE*/MeV\tSI_fus\n")
 
     for line in elab_lines[1:]:
         parts = line.split()
